@@ -39,21 +39,29 @@
     text-align: left;
 }
 
-/*input[type=text] {
+input[type=text] {
     background-color: inherit;
     font-weight: bold;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+}
+
+input[type=email] {
+    background-color: inherit;
+    font-weight: bold;
+    /*margin-bottom: 20px;*/
 }
 
 input[type=password] {
     background-color: inherit;
     font-weight: bold;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
-*/
-input{
-    color:white;
+
+.group>label{
+    font-weight: bold;
 }
+
+
 
 .form-control:focus {
     border-color: inherit;
@@ -207,7 +215,7 @@ p {
 
 .group {
     position: relative;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 input {
@@ -218,6 +226,7 @@ input {
     border: none;
     background: transparent;
     border-bottom: 1px solid #757575;
+    color:white;
 }
 
 input:focus {
