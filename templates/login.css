@@ -51,7 +51,9 @@ input[type=password] {
     margin-bottom: 20px;
 }
 */
-
+input{
+    color:white;
+}
 
 .form-control:focus {
     border-color: inherit;
