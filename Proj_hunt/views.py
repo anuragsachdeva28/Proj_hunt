@@ -50,6 +50,7 @@ def register_page(request):
             contact2=contact2,
             contact3=contact3
         )
+        new_profile.save()
     return render(request,"auth/register.html",context)
 
 def login_page(request):
@@ -76,7 +77,5 @@ def login_page(request):
     return render(request,"auth/login.html",context)
 
 
-def question(request):
-    if request.user.is_authenticated:
-        level=request.user.
+
 
