@@ -4,77 +4,126 @@ from django.contrib.auth import get_user_model,authenticate,login
 from .forms import RegisterForm,LoginForm
 
 from user_detail.models import Profile
+from verify.models import verification
+
+User=get_user_model()
+
 
 
 def index(request):
-    return render(request,"1.html",{})
+    if request.POST:
+        username=request.POST.get('email')
+        password=request.POST.get('password')
+        user=authenticate(request,username=username,password=password)
+        if user is not None:
+            login(request,user)
+            return redirect('/rules')
+        else:
+            print('error')
+    return render(request,"auth/index.html",{})
 
-User=get_user_model()
+
+
+
+
+
+
+
+
+
 def register_page(request):
-    form = RegisterForm(request.POST or None)
     context = {
-        "form": form
+        "bool":False
     }
-    if form.is_valid():
-        print(form.cleaned_data)
-        username = form.cleaned_data.get("username")
-        email=form.cleaned_data.get("email")
-        password = form.cleaned_data.get("password")
-        new_user=User.objects.create_user(username,email,password)
-        print(new_user)
-        leadername=form.cleaned_data.get("leadername")
-        email1=form.cleaned_data.get("email1")
-        email2=form.cleaned_data.get("email2")
-        email3=form.cleaned_data.get("email3")
-        branch1=form.cleaned_data.get("branch1")
-        branch2=form.cleaned_data.get("branch2")
-        branch3=form.cleaned_data.get("branch3")
-        contact1=form.cleaned_data.get("contact1")
-        contact2=form.cleaned_data.get("contact2")
-        contact3=form.cleaned_data.get("contact3")
-        participant2=form.cleaned_data.get("participant2")
-        participant3=form.cleaned_data.get("participant3")
-
-        new_profile=Profile.objects.create(
-            leader=new_user,
-            leadername=leadername,
-            participant2=participant2,
-            participant3=participant3,
-            email1=email1,
-            email2=email2,
-            email3=email3,
-            branch1=branch1,
-            branch2=branch2,
-            branch3=branch3,
-            contact1=contact1,
-            contact2=contact2,
-            contact3=contact3
-        )
-        new_profile.save()
+    if request.POST:
+        name = request.POST.get("name")
+        email=request.POST.get("email")
+        number=request.POST.get("number")
+        signid=request.POST.get("signid")
+        admission=request.POST.get("admission")
+        password = request.POST.get("password")
+        objs=verification.objects.filter(signid=signid)
+        if objs.count()>0:
+            objs.first().delete()
+            new_user=User.objects.create_user(
+                    username=email,
+                    email=email,
+                    password=password
+                )
+            new=Profile.objects.create(
+                    leader=new_user,
+                    name=name,
+                    admission=admission,
+                    email=email,
+                    number=number,
+                    signid=signid
+                )
+            new.save()
+            login(request,new_user)
+            return redirect('/rules')
+        else:
+            context={
+                "bool":True
+            }
     return render(request,"auth/register.html",context)
 
-def login_page(request):
-    form=LoginForm(request.POST or None)
-    context = {
-        "form": form
-    }
-    print("User logged in ")
-    #print(request.user.is_authenticated)
-    if form.is_valid():
-        print(form.cleaned_data)
-        username=form.cleaned_data.get("username")
-        password=form.cleaned_data.get("password")
-        user=authenticate(request,username=username,password=password)
-        #print(request.user.is_authenticated)
-        print(user)
-        if user is not None:
-            #print(request.user.is_authenticated)
-            login(request,user)
-            #context["form"] = LoginForm()
-            return redirect("/")
-        else:
-            print("Error")
-    return render(request,"auth/login.html",context)
+
+
+
+
+def rules(request):
+    if request.user.is_authenticated:
+        pro=Profile.objects.get(email=request.user.username)
+        context={
+            "name":pro.name,
+        }
+        return render(request,"auth/rules.html",context)
+    else:
+        return render(request,"auth/notfound.html",{})
+
+
+
+
+
+
+
+
+
+def question(request):
+    if request.user.is_authenticated:
+        return render(request,"auth/question.html",{})
+    else:
+        return render(request,"auth/notfound.html",{})
+
+
+
+
+
+
+
+
+# def login_page(request):
+#     form=LoginForm(request.POST or None)
+#     context = {
+#         "form": form
+#     }
+#     print("User logged in ")
+#     #print(request.user.is_authenticated)
+#     if form.is_valid():
+#         print(form.cleaned_data)
+#         username=form.cleaned_data.get("username")
+#         password=form.cleaned_data.get("password")
+#         user=authenticate(request,username=username,password=password)
+#         #print(request.user.is_authenticated)
+#         print(user)
+#         if user is not None:
+#             #print(request.user.is_authenticated)
+#             login(request,user)
+#             #context["form"] = LoginForm()
+#             return redirect("/")
+#         else:
+#             print("Error")
+#     return render(request,"auth/login.html",context)
 
 
 
