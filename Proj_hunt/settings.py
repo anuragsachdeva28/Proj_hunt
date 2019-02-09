@@ -25,7 +25,7 @@ SECRET_KEY = '54lsg6e$bbt3$=nb!9*t59#l=b=l)tj=z5x866z6b&e7^#!8nk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     #our app
     'verify',
     'user_detail',
+    'Questions',
 ]
 
 MIDDLEWARE = [

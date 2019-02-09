@@ -5,6 +5,7 @@ from .forms import RegisterForm,LoginForm
 
 from user_detail.models import Profile
 from verify.models import verification
+from Questions.models import question_model
 
 User=get_user_model()
 
@@ -91,7 +92,14 @@ def rules(request):
 
 def question(request):
     if request.user.is_authenticated:
-        return render(request,"auth/question.html",{})
+        usr=Profile.objects.get(email=request.user.username)
+        objs=question_model.objects.get(level=usr.level)
+        context={
+            'level':usr.level,
+            'title':objs.title,
+            'desc':objs.description,
+        }
+        return render(request,"auth/question.html",context)
     else:
         return render(request,"auth/notfound.html",{})
 
