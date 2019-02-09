@@ -211,6 +211,9 @@ p {
     /* border: 5px solid #1befc5; */
 
 }
+header{
+    z-index: 100000000000;
+}
 
 
 .group {
