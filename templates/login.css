@@ -357,8 +357,15 @@ input:focus~.highlight {
         margin: auto;
         width: 80vw;
     }
-    .domain_search_button{
-        width: 100%;
+    .new_user p{
+        font-size: 4vw;
+    }
+    .new_user .domain_search_button,
+    .loginbttm .domain_search_button{
+        width: 30%;
+    }
+    .login-title h4{
+        font-size: 5vw;
     }
 }
 
@@ -390,7 +397,7 @@ input:focus~.highlight {
   }
   
   .brand-logo a {
-    background-color:   transparent;
+    background-color:   #888;
     text-decoration: none;
     color: #000000;
     display: inline-block;
@@ -413,7 +420,7 @@ input:focus~.highlight {
     height: 50px;
     margin: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 100000;
     right: 0;
     top: 0;
     opacity: 0;
@@ -448,7 +455,7 @@ input:focus~.highlight {
     left: 50%;
     transform: translate(-50%, -50%);    
     background-color: white;
-    z-index: 0;
+    z-index: 100000;
   }
   .hamburger-menu span::after, 
   .hamburger-menu span::before {
@@ -459,7 +466,7 @@ input:focus~.highlight {
     height: 2px;
     background-color: white;
     transition: all 0.6s ease;
-    z-index: 1000;
+    z-index: 100000;
   } 
   
   .hamburger-menu span::after {
@@ -476,9 +483,9 @@ input:focus~.highlight {
     list-style: none;
     transform: translateY(-300%);
     transition: all 0.6s ease;
-    background-color: transparent;
+    background-color: #888;
     position: relative;
-    z-index: -10000;
+    z-index: 10000;
   }
   
   .nav-item {
@@ -504,9 +511,10 @@ input:focus~.highlight {
       display: inline-block;
       position: absolute;
       top: 0;
-      z-index: 1;
+      z-index: 100000;
       right: 0px;
       transform: translateY(0%);
+      background-color: transparent;
     }
     .nav-item {
       display: inline-block;
@@ -526,6 +534,9 @@ input:focus~.highlight {
     
     .navBar input {
       display: none;
+    }
+    .brand-logo a{
+        background-color: transparent;
     }
   }
 .navBar{
