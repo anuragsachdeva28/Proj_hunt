@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="login.css">
     <style type="text/css">
         .home{
-            height: 110vh;
+            height: 125vh;
         }
     </style>
 </head>
@@ -61,12 +61,12 @@
             <div class="cloud cloud_3"><img src="../../static/images/cloud_full.png" alt=""></div>
             <div class="cloud cloud_4"><img src="../static/images/cloud.png" alt=""></div>
             <div class="container_box sign_up_box">
-                <div class="new_user">
+                <div class="new_user" id="l1">
                     <p>Already a User?</p>
                     <button class="domain_search_button">Log in</button>
                 </div>
 
-                <div class="empty"></div>
+                <div class="empty" id="l2"></div>
 
                 <div class="login-box login_main sign_up_main">
                     <form>
@@ -98,6 +98,13 @@
                             <input type="text" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
+                            <label>Regis-ID</label>
+                        </div>
+
+                        <div class="group">
+                            <input type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
                             <label>Userame</label>
                         </div>
 
@@ -107,10 +114,23 @@
                             <span class="bar"></span>
                             <label>Password</label>
                         </div>
-
-                        <div class=" loginbttm login-btm login-button">
+                    
+                        <div class="row">
+                            <div class="col-md-6 col-6 loginbttm login-btm login-button" style="float: left">
+                                <button class="domain_search_button sign-bt" id="b1">Log In</button>
+                            </div>
+                    
+                            <div class="col-md-6 col-6 loginbttm login-btm login-button">
+                                <button class="domain_search_button sign-bt" id="b2">Register</button>
+                            </div>
+                        </div>
+                        <!-- <div class=" loginbttm login-btm login-button" style="float: left">
                             <button class="domain_search_button">Sign in</button>
                         </div>
+                
+                        <div class=" loginbttm login-btm login-button">
+                            <button class="domain_search_button">Sign in</button>
+                        </div> -->
                     </form>
                 </div>
 
