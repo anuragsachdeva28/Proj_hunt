@@ -1,3 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
+from .models import verification
+
+def gen(request):
+	objs=verification.objects.all()
+	li=[]
+	for i in objs:
+		li.append(i.signid)
+	data={
+		'reg':li,
+		'range':range(4)
+	}
+	return render(request,"Backend/gen.html",data)
+
