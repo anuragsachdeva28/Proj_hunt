@@ -18,6 +18,9 @@ class Profile(models.Model):
     number=models.IntegerField()
     level=models.IntegerField(default=1)
     signid=models.CharField(max_length=12,null=True)
+    attempts=models.IntegerField(default=0)
+    points=models.IntegerField(default=0)
+
 
 
     def __str__(self):

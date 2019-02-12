@@ -18,6 +18,7 @@ from django.urls import path
 
 from .views import index,register_page,rules,question
 #from verify.views import gen
+from .views import leaderboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +26,7 @@ urlpatterns = [
     path('register/', register_page),
     path('rules',rules),
     path('question',question),
+    path('leaderboard',leaderboard),
 
     #path('gen',gen),
 ]
