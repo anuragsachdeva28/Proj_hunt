@@ -21,7 +21,7 @@ def index(request):
             return redirect('/rules')
         else:
             print('error')
-    return render(request,"auth/index.html",{})
+    return render(request,"Backend/index.html",{})
 
 
 
@@ -66,7 +66,7 @@ def register_page(request):
             context={
                 "bool":True
             }
-    return render(request,"auth/register.html",context)
+    return render(request,"Backend/register.html",context)
 
 
 
@@ -78,9 +78,9 @@ def rules(request):
         context={
             "name":pro.name,
         }
-        return render(request,"auth/rules.html",context)
+        return render(request,"Backend/rules.html",context)
     else:
-        return render(request,"auth/notfound.html",{})
+        return render(request,"Backend/notfound.html",{})
 
 
 
@@ -99,9 +99,21 @@ def question(request):
             'title':objs.title,
             'desc':objs.description,
         }
-        return render(request,"auth/question.html",context)
+        if request.POST:
+            lat=request.POST.get('lat')
+            longi=request.POST.get('longi')
+            print(lat)
+            print(objs.latitude)
+            print(longi)
+            print(objs.longitude)
+            # print(float(lat))
+            if lat[:5]==str(objs.latitude)[:5] and longi[:5]==str(objs.longitude)[:5]:
+                return redirect('/')
+            else:
+                return redirect('/rules')
+        return render(request,"Backend/question.html",context)
     else:
-        return render(request,"auth/notfound.html",{})
+        return render(request,"Backend/notfound.html",{})
 
 
 

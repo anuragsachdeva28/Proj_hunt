@@ -61,10 +61,16 @@
 				<div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<div class="domain_search_form_container">
+							<form method="POST" id="fo">{% csrf_token %}
 							<!-- <form method="POST" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start"> -->
 								<div id="output"></div>
-								<button class="domain_search_button d-flex flex-row align-items-center justify-content-center" onclick="getLocation()"><img src="../static/images/search.png" alt="">Check my Location !</button>
-							<!-- </form> -->
+									
+										<input type="text" name="lat" id="lat" style="display: none;" value="" >
+										<input type="text" name="longi" id="longi" style="display: none;" value="" >
+								</form>
+								
+								<button class="domain_search_button d-flex flex-row align-items-center justify-content-center" onclick="getLocation()" type="submit"><img src="../static/images/search.png" alt="">Check my Location !</button>
+							
 						</div>
 					</div>
 				</div>
@@ -99,32 +105,31 @@
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript">
 	var x=document.getElementById('output');
-	function error(err) {
-  		console.warn(`ERROR(${err.code}): ${err.message}`);
-	}
-	var options = {
-		enableHighAccuracy: true,
-		timeout: 5000,
-		maximumAge: 600
-	};
-	function showOutput(position){
-		x.innerHTML+=position.coords.latitude;
-		x.innerHTML+="<br>";
-		x.innerHTML+=position.coords.longitude;
-		x.innerHTML+="<br>";
-		x.innerHTML+=position.coords.accuracy;
-		x.innerHTML+="</h1>";
-	}
+	var y=document.getElementById('lat');
+	var z=document.getElementById('longi');
+	
 	function getLocation(){
-		x.innerHTML="<h1>";
+		x.innerHTML+="Hello"
 		if(navigator.geolocation){
 
-			navigator.geolocation.getCurrentPosition(showOutput,error,options);
+			navigator.geolocation.getCurrentPosition(showOutput);
 		}
 		else{
 			x.innerHTML+="Not Supported";
 		}
 	}
+
+
+	function showOutput(position){
+		x.innerHTML+="Hello There"
+		y.value=""+position.coords.latitude;
+		z.value=""+position.coords.longitude;
+		
+		x.innerHTML+=position.coords.latitude;
+		document.getElementById('fo').submit();
+	}
+
+	
 </script>
 </body>
 </html>
