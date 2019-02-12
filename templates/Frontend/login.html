@@ -15,6 +15,11 @@
 	<link rel="stylesheet" type="text/css" href="../../static/styles/main_styles.css">
 	<link rel="stylesheet" type="text/css" href="../../static/styles/responsive.css">
 	<link rel="stylesheet" type="text/css" href="login.css">
+	<style type="text/css">
+		.login_main{
+			width: 35vw;
+		}
+	</style>
 </head>
 
 <body>
@@ -33,10 +38,10 @@
 					<span></span>
 				</div>
 				<ul class="nav-list">
-					<li class="nav-item"><a href="dashboard.html" target="_blank">DashBoard</a></li>
-					<li class="nav-item"><a href="login.html" target="_blank">Log In</a></li>
+					<li class="nav-item"><a href="1.html">DashBoard</a></li>
+					<li class="nav-item"><a href="login.html">Log In</a></li>
 					<!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
-					<li class="nav-item"><a href="rules.html" target="_blank">Rules</a></li>
+					<li class="nav-item"><a href="rules.html">Rules</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -55,12 +60,12 @@
 			<div class="cloud cloud_3"><img src="../../static/images/cloud_full.png" alt=""></div>
 			<div class="cloud cloud_4"><img src="../../static/images/cloud.png" alt=""></div>
 			<div class="container_box">
-				<div class="new_user">
+				<div class="new_user" id="l1">
 					<p>New here? Register now!</p>
 					<button class="domain_search_button">Register</button>
 				</div>
 
-				<div class="empty"></div>
+				<div class="empty" id="l2"></div>
 
 				<div class="login-box login_main">
 					<form>
@@ -80,9 +85,15 @@
 							<span class="bar"></span>
 							<label>Password</label>
 						</div>
-						<div class=" loginbttm login-btm login-button">
-							<button class="domain_search_button" href="Sign up.html">Sign in</button>
-						</div>
+						<div class="row">
+                            <div class="col-md-6 col-6 loginbttm login-btm login-button"  >
+                                <button class="domain_search_button sign-bt" id="b2">Log In</button>
+                            </div>
+                    
+                            <div class="col-md-6 col-6 loginbttm login-btm login-button" >
+                                <button class="domain_search_button sign-bt" id="b1">Register</button>
+                            </div>
+                        </div>
 					</form>
 				</div>
 
