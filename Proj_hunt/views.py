@@ -93,29 +93,60 @@ def rules(request):
 def question(request):
     if request.user.is_authenticated:
         usr=Profile.objects.get(email=request.user.username)
+        if usr.level>2:
+            return render(request,'Backend/completed.html',{})
         objs=question_model.objects.get(level=usr.level)
         context={
             'level':usr.level,
             'title':objs.title,
             'desc':objs.description,
+            'wrong':False
         }
         if request.POST:
-            lat=request.POST.get('lat')
-            longi=request.POST.get('longi')
-            print(lat)
-            print(objs.latitude)
-            print(longi)
-            print(objs.longitude)
-            # print(float(lat))
-            if lat[:5]==str(objs.latitude)[:5] and longi[:5]==str(objs.longitude)[:5]:
-                return redirect('/')
+            ans=objs.correct_ans
+            ans1=request.POST.get('ans1')
+            if ans==ans1:
+                usr.level=usr.level+1
+                if usr.attempts<=3:
+                    usr.points=usr.points+10-((usr.attempts)*2)
+                else:
+                    usr.points=usr.points+4
+                usr.attempts=0
+                usr.save()
+                if usr.level<=objs.top_level:
+                    objs=question_model.objects.get(level=usr.level)
+                    context={
+                        'level':usr.level,
+                        'title':objs.title,
+                        'desc':objs.description,
+                    }
+                else:
+                    return render(request,'Backend/completed.html',{})
             else:
-                return redirect('/rules')
+                context['wrong']=True
+                usr.attempts=usr.attempts+1
+                usr.save()
         return render(request,"Backend/question.html",context)
     else:
         return render(request,"Backend/notfound.html",{})
 
 
+
+
+def leaderboard(request):
+    objs=Profile.objects.all().order_by('-points')
+    context={
+        "object":objs,
+    }
+    if request.user.is_authenticated:
+        obj=Profile.objects.filter(email=request.user.username).first()
+        context={
+            "hg":True,
+            "point":obj.points,
+            "object":objs,
+        }
+
+    return render(request,'Backend/leaderboard.html',context)
 
 
 
