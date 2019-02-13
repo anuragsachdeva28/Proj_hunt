@@ -18,15 +18,15 @@ from django.urls import path
 
 from .views import index,register_page,rules,question
 #from verify.views import gen
-from .views import leaderboard
+from .views import leaderboard,coming
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index),
-    path('register/', register_page),
-    path('rules',rules),
-    path('question',question),
-    path('leaderboard',leaderboard),
-
+    #path('admin/', admin.site.urls),
+    #path('', index),
+    #path('register/', register_page),
+    #path('rules',rules),
+    #path('question',question),
+    #path('leaderboard',leaderboard),
+    path('',coming),
     #path('gen',gen),
 ]

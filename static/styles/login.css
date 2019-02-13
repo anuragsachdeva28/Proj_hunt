@@ -559,11 +559,6 @@ input:focus~.highlight {
     .brand-logo a{
         background-color: transparent;
     }
-
-    .navBar span{
-        color: #1befc5;
-        font-size: 1em;
-    }
   }
 .navBar{
     margin: 3vh auto;
@@ -576,12 +571,3 @@ input:focus~.highlight {
 .navBar a{
     margin: 0 1vw;
 }
-
-
-@media only screen and (max-width: 480px){
-    .navBar span{
-        color: #1befc5;
-        font-size: 1.5em;
-    }
-}
-

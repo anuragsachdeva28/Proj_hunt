@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DashBoard</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="HostSpace template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../../static/styles/bootstrap-4.1.2/bootstrap.min.css">
+	<link href="../../static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="../../static/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="../../static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="../../static/plugins/OwlCarousel2-2.2.1/animate.css">
+	<link rel="stylesheet" type="text/css" href="../../static/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="../../static/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="../../static/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="../static/styles/dashboard.css">
+    <style type="text/css">
+    	@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:900");
+		html {
+		  display: grid;
+		  min-height: 100%;
+		}
+
+		body {
+		  display: grid;
+		  background: #183059;
+		  font-weight: 800;
+		}
+
+		/*.container {
+		  position: relative;
+		  margin: auto;
+		  overflow: hidden;
+		  width: 100%;
+		  /*height: 480px;*/
+		}*/
+		.container {
+		    position: relative;
+		    margin: auto;
+		    overflow: hidden;
+		    /* width: auto; */
+		    /* height: 480px; */
+		}
+
+		h1 {
+		  font-family: "Lato", sans-serif;
+		  text-align: center;
+		  margin-top: 2em;
+		  font-size: 1em;
+		  text-transform: uppercase;
+		  letter-spacing: 5px;
+		  color: #F6F4F3;
+		}
+
+		/*#timer {
+		  color: #F6F4F3;
+		  text-align: center;
+		  text-transform: uppercase;
+		  font-family: "Lato", sans-serif;
+		  font-size: .7em;
+		  letter-spacing: 5px;
+		  margin-top: 25%;
+		}*/
+
+		#timer {
+		    width: 100%;
+		    color: #F6F4F3;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-family: "Lato", sans-serif;
+		    font-size: .7em;
+		    height: 100%;
+		    letter-spacing: 5px;
+		    /* margin-top: 25%; */
+		}
+
+		.days, .hours, .minutes, .seconds {
+		  display: inline-block;
+		  padding: 20px;
+		  width: 20%;
+		  border-radius: 5px;
+		}
+
+		.days {
+		  background: #EF2F3C;
+		}
+
+		.hours {
+		  background: #F6F4F3;
+		  /*color: #183059;*/
+		}
+
+		.minutes {
+		  background: #276FBF;
+		}
+
+		.seconds {
+		  background: #F0A202;
+		}
+
+		.numbers {
+		  font-family: "Montserrat", sans-serif;
+		  color: white;
+		  font-size: 5em;
+		}
+
+		.white {
+		  position: absolute;
+		  background: #F6F4F3;
+		  height: 85px;
+		  width: 75px;
+		  left: 30%;
+		  top: 2%;
+		}
+		.white .triangle {
+		  border-bottom: 14px solid #F6F4F3;
+		}
+		.white .string {
+		  background: #F6F4F3;
+		  border: 1px solid #F6F4F3;
+		}
+
+		.red {
+		  position: absolute;
+		  background: #EF2F3C;
+		  left: 18%;
+		  top: 9%;
+		  height: 65px;
+		  width: 70px;
+		}
+		.red .triangle {
+		  border-bottom: 14px solid #EF2F3C;
+		}
+		.red .string {
+		  background: #EF2F3C;
+		  border: 1px solid #EF2F3C;
+		}
+
+		.blue {
+		  position: absolute;
+		  background: #276FBF;
+		  height: 80px;
+		  width: 80px;
+		  left: 60%;
+		  top: 5%;
+		}
+		.blue .triangle {
+		  border-bottom: 14px solid #276FBF;
+		}
+		.blue .string {
+		  background: #276FBF;
+		  border: 1px solid #276FBF;
+		}
+
+		.balloon {
+		  border: 1px solid #000;
+		  border-radius: 50% 50% 50% 50%/ 40% 40% 60% 60%;
+		  z-index: 2;
+		}
+
+		.eye {
+		  position: absolute;
+		  width: 7px;
+		  height: 7px;
+		  top: 40%;
+		  left: 22%;
+		  background: #000;
+		  border-radius: 50%;
+		}
+		.eye:after {
+		  content: '';
+		  left: 35px;
+		  width: 7px;
+		  height: 7px;
+		  border-radius: 50%;
+		  background: #000;
+		  position: absolute;
+		}
+
+		.mouth {
+		  position: absolute;
+		  top: 45%;
+		  left: 43%;
+		  width: 7px;
+		  height: 7px;
+		  border-radius: 50%;
+		}
+
+		.happy {
+		  border: 2px solid;
+		  border-color: transparent #000 #000 transparent;
+		  transform: rotate(45deg);
+		}
+
+		.triangle {
+		  position: absolute;
+		  left: 40%;
+		  bottom: -10%;
+		  width: 0;
+		  height: 0;
+		  border-left: 7px solid transparent;
+		  border-right: 7px solid transparent;
+		}
+
+		.string {
+		  position: absolute;
+		  height: 70px;
+		  width: 1px;
+		  left: 48%;
+		  top: 100%;
+		  z-index: -1;
+		}
+
+		.star {
+		  width: 20px;
+		  height: 20px;
+		  background: #F6F4F3;
+		  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		}
+
+		.star-red {
+		  width: 30px;
+		  height: 30px;
+		  margin-left: 51px;
+		  margin-top: -5px;
+		  background: #EF2F3C;
+		  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+		}
+
+		footer {
+		  position: absolute;
+		  bottom: 0;
+		  right: 0;
+		  text-transform: uppercase;
+		  padding: 10px;
+		  font-family: "Lato", sans-serif;
+		  font-size: 0.7em;
+		}
+		footer p {
+		  letter-spacing: 3px;
+		  color: #EF2F3C;
+		}
+		footer a {
+		  color: #F6F4F3;
+		  text-decoration: none;
+		}
+		footer a:hover {
+		  color: #276FBF;
+		}
+
+		.container_box {
+		    /* top: 25vh; */
+		    z-index: 1000;
+		    display: flex;
+		    height: 100%;
+		    align-items: center;
+		    justify-content: center;
+		}
+
+		@media screen and (max-width: 560px) {
+			
+			.numbers{
+				font-size: 3.5em;
+			}
+
+			
+
+			#timer {
+				font-size: 0.5em;
+				letter-spacing: 1px;
+			}
+		}
+		
+		@media screen and (max-width: 375px) {
+			.numbers{
+				font-size: 2.5em;
+			}
+		}
+.brand-logo{
+	margin-left: 360px;
+	margin-top: 150px;
+	font-size: 40px;
+}
+
+
+.l3 h5{
+	color: white;
+	margin-top: 25px;
+	font-size: 25px;
+}
+
+
+		@media screen and (max-width: 560px){
+			.brand-logo{
+				margin-left: 60px;
+				margin-top: 150px;
+				font-size: 25px;
+			}
+			.brand-logo h5{
+				font-size: 18px;
+				margin-top: 50px;
+			}
+		}
+
+
+		@media screen and (max-width: 375px){
+			.brand-logo{
+				margin-left: 40px;
+				margin-top: 150px;
+				font-size: 18px;
+			}
+			.l3 h5{
+				font-size: 10px;
+				margin-top: 50px;
+			}
+		}
+
+		#timer>div {
+		    background: rgba(0,0,0,0.6);
+		}
+
+
+    </style>
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+		<header class="header trans_400">
+                <nav role="navigation" class="navBar">
+                    <div class="brand-logo" style=" ">
+                        <span>Treasuro</span>
+                        
+                    </div>
+                    <div class="brand-logo l3" style="display: inline;">
+                    	<h5 style="">Let the Game be Ventured Out !!!</h5>
+                    </div>
+                    <!-- <input type="checkbox">
+                    <div class="hamburger-menu">
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="dashboard.html" target="_blank">DashBoard</a></li>
+                        <li class="nav-item"><a href="login.html" target="_blank">Log In</a></li>
+                        <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li>
+                        <li class="nav-item"><a href="rules.html" target="_blank">Rules</a></li>
+                    </ul> -->
+                </nav>
+            </header> 
+
+		<!-- Menu -->
+
+
+		
+
+
+
+
+
+		<div class="menu_overlay trans_400"></div>
+
+		<!-- Home -->
+
+		<div class="home">
+			<div class="home_background"></div>
+			<div class="background_image background_city" style="background-image:url(../../static/images/city.png)"></div>
+			<div class="cloud cloud_1"><img src="../../static/images/cloud.png" alt=""></div>
+			<div class="cloud cloud_2"><img src="../../static/images/cloud.png" alt=""></div>
+			<div class="cloud cloud_3"><img src="../../static/images/cloud_full.png" alt=""></div>
+			<div class="cloud cloud_4"><img src="../../static/images/cloud.png" alt=""></div>
+			<div class="container_box">
+				<div class="container">
+				  <div id="timer"></div>
+				  <h1 style="height: 24px;"></h1>
+				  <h1></h1>
+				  <!-- <h1>Days to go . . .</h1> -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+	</div>
+
+	<script src="../../static/js/jquery-3.2.1.min.js"></script>
+	<script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>
+	<script src="../../static/styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+	<script src="../../static/plugins/greensock/TweenMax.min.js"></script>
+	<script src="../../static/plugins/greensock/TimelineMax.min.js"></script>
+	<script src="../../static/plugins/scrollmagic/ScrollMagic.min.js"></script>
+	<script src="../../static/plugins/greensock/animation.gsap.min.js"></script>
+	<script src="../../static/plugins/greensock/ScrollToPlugin.min.js"></script>
+	<script src="../../static/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+	<script src="../../static/plugins/easing/easing.js"></script>
+	<script src="../../static/plugins/progressbar/progressbar.min.js"></script>
+	<script src="../../static/plugins/parallax-js-master/parallax.min.js"></script>
+	<script src="../../static/js/custom.js"></script>
+	<script type="text/javascript">
+		const year = (new Date().getFullYear()) + 0;
+		const eighteenthOfFeb = new Date(year, 1, 18).getTime();
+
+		// countdown
+		let timer = setInterval(function() {
+
+		  // get today's date
+		  const today = new Date().getTime();
+
+		  // get the difference
+		  const diff = eighteenthOfFeb - today;
+
+		  // math
+		  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+		  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+		  // display
+		  document.getElementById("timer").innerHTML =
+		    "<div class=\"days\"> \
+		  <div class=\"numbers\">" + days + "</div>days</div> \
+		<div class=\"hours\"> \
+		  <div class=\"numbers\">" + hours + "</div>hours</div> \
+		<div class=\"minutes\"> \
+		  <div class=\"numbers\">" + minutes + "</div>minutes</div> \
+		<div class=\"seconds\"> \
+		  <div class=\"numbers\">" + seconds + "</div>seconds</div> \
+		</div>";
+
+		}, 1000);
+	</script>
+</body>
+
+</html>

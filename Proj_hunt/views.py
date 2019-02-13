@@ -27,7 +27,8 @@ def index(request):
 
 
 
-
+def coming(request):
+    return render(request,"Backend/coming_soon.html",{})
 
 
 

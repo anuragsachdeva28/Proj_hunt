@@ -133,6 +133,11 @@
   .nav-item a:hover {
     background-color: #e2e2e2;
   }
+  .nav-item a:hover{
+    background-color: #1befc5;
+    border-radius: .2rem;
+    color: black;
+}
   
   @media(min-width: 840px) {
     .nav-list {
