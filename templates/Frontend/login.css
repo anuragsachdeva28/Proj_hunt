@@ -507,11 +507,27 @@ input:focus~.highlight {
     background-color: #888;
     position: relative;
     z-index: 10000;
+    background-color: #200e35;
+    /*width: 126%;*/
+    /* height: 570%; */
+    /*margin-left: -13%;*/
+  }
+
+  @media(max-width: 840px) {
+    .nav-list {
+      width: 126%;
+     /*height: 570%; */
+      margin-left: -13%;
+    }
   }
   
   .nav-item {
     width: 100%;
     text-align: center;
+  }
+
+  .nav-item:hover{
+    opacity: 0.5;
   }
   
   .nav-item a {
@@ -521,10 +537,13 @@ input:focus~.highlight {
     display: block;
     height: 100%;
     padding: 10px 5px;
+
   }
   
-  .nav-item a:hover {
-    background-color: #e2e2e2;
+  .nav-item>a:hover {
+    /*background-color: #e2e2e2;*/
+    
+    color:#1befc5;
   }
   
   @media(min-width: 840px) {
@@ -570,4 +589,9 @@ input:focus~.highlight {
 }
 .navBar a{
     margin: 0 1vw;
+}
+
+
+.nav-item > a:hover{
+    background: #200e35;
 }

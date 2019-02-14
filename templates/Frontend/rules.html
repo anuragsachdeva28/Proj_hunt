@@ -17,16 +17,83 @@
     <link rel="stylesheet" type="text/css" href="login.css">
     <link rel="stylesheet" type="text/css" href="rules.css">
     <style>
-        .home{
-            height: 130vh;
+        
+        @media screen and (min-width: 840px) {
+            .home{
+                height: 180vh;
+            }
+            .container_box{
+                flex-direction: column-reverse;
+            }
         }
+        @media screen and (min-width: 1024px) {
+            .home{
+                height: 155vh;
+            }
+        }
+        @media screen and (min-width: 1900px) {
+            .home{
+                height: 100vh;
+            }
+        }
+
         @media screen and (max-width: 840px) {
             .home{
-                height: 290vh;
+                height: 180vh;
             }
             .home .container_box .login_main{
                 width: 90vw;
             }
+        }
+
+        @media screen and (max-width: 680px) {
+            .home{
+                height: 200vh;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .home{
+                height: 220vh;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .home{
+                height: 250vh;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .home{
+                height: 300vh;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .home{
+                height: 340vh;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .home{
+                height: 360vh;
+            }
+        }
+
+        .new_user .domain_search_button{
+            /* margin: 2vh 0; */
+            width: 10vw;
+            text-align: center;
+        }
+
+        .container_box{
+            align-items: center;
+        }
+
+        .domain_search_button{
+            position: absolute;
         }
     </style>
 </head>
@@ -46,6 +113,7 @@
                     <div class="hamburger-menu">
                         <span></span>
                     </div>
+
                     <ul class="nav-list">
                         <li class="nav-item"><a href="1.html">DashBoard</a></li>
                         <li class="nav-item"><a href="login.html">Log In</a></li>
@@ -100,7 +168,9 @@
                         </ul>
                     </div>
                 </div>
+                <button class="domain_search_button">Begin Hunt!!!</button>
             </div>
+
         </div>
     </div>
 

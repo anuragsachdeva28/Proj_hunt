@@ -18,7 +18,17 @@
 	<style type="text/css">
 		.login_main{
 			width: 35vw;
+			top: -5vh;
 		}
+		.empty{
+			height:40vh;
+		}
+
+		@media screen and (max-width: 840px){
+			.login_main, .new_user {
+			    margin: auto;
+			    width: 85vw;
+			}
 	</style>
 </head>
 
@@ -87,11 +97,11 @@
 						</div>
 						<div class="row">
                             <div class="col-md-6 col-6 loginbttm login-btm login-button"  >
-                                <button class="domain_search_button sign-bt" id="b2">Log In</button>
+                                <button class="domain_search_button sign-bt" id="b1">Register</button>
                             </div>
                     
                             <div class="col-md-6 col-6 loginbttm login-btm login-button" >
-                                <button class="domain_search_button sign-bt" id="b1">Register</button>
+                                <button class="domain_search_button sign-bt" id="b2">Login</button>
                             </div>
                         </div>
 					</form>
