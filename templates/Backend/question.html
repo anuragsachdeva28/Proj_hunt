@@ -74,7 +74,11 @@
 					<div class="col">
 						<div class="home_content text-center">
 							<div class="home_title">{{title}}</div>
-                            <div class="home_text" style="font-size: 18px;">{{desc|linebreaks}}</div>
+                            <div class="home_text" style="font-size: 18px;">{{desc|linebreaks}}
+                            	{% if obj.file_check %}
+                            		Click here to view the file <a href="{{obj.file.url}}" download>Download</a>
+                            	{% endif %}
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -117,15 +121,32 @@
 		    color: black;
 		}
 	.home_container{
-		top: 25%;
+		top: 29%;
 	}
 	
 }
+
+{% if obj.file_check %}
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.home{
+		height: 110vh;
+	}
 	.home_container{
-    top: 12%;
+		top: 25%;
+	}
 }
+{% endif %}
+
+{% if obj.line %}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+	.home{
+		height: 120vh;
+	}
+	.home_container{
+		top: 20%;
+	}
 }
+{% endif %}
 </style>
 
 <script src="../../static/js/jquery-3.2.1.min.js"></script>

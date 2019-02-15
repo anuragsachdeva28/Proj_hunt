@@ -19,6 +19,9 @@ from django.urls import path
 from .views import index,register_page,rules,question
 from verify.views import gen2
 from .views import leaderboard
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,3 +34,11 @@ urlpatterns = [
 
     #path('gen',gen),
 ]
+
+
+
+
+
+
+urlpatterns=urlpatterns + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns=urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

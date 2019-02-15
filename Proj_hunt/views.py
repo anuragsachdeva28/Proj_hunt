@@ -50,7 +50,8 @@ def register_page(request):
         password = request.POST.get("password")
         objs=verification.objects.filter(signid=signid)
         if objs.count()>0:
-            objs.first().delete()
+            if objs.first().signid!='archit':
+                objs.first().delete()
             new_user=User.objects.create_user(
                     username=email,
                     email=email,
@@ -103,14 +104,15 @@ def question(request):
     if request.user.is_authenticated:
         usr=Profile.objects.get(email=request.user.username)
         if not(usr.freeze):
-            if usr.level>2:
+            if usr.level>3:
                 return render(request,'Backend/completed.html',{})
             objs=question_model.objects.get(level=usr.level)
             context={
                 'level':usr.level,
                 'title':objs.title,
                 'desc':objs.description,
-                'wrong':False
+                'wrong':False,
+                'obj':objs
             }
             if request.POST:
                 ans=objs.correct_ans
@@ -130,6 +132,7 @@ def question(request):
                             'level':usr.level,
                             'title':objs.title,
                             'desc':objs.description,
+                            'obj':objs
                         }
                     else:
                         return render(request,'Backend/completed.html',{})
