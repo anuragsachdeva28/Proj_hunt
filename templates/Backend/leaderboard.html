@@ -26,6 +26,28 @@
     padding: 3px;
 }
 	</style>
+	<style type="text/css">
+		.icon {
+		    position: absolute;
+		    width: 9%;
+		    bottom: 0;
+		    left:0;
+		    padding: 2%;
+		    opacity: 0.8;
+		    z-index: 1000;
+		}
+		@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+			.icon {
+		    position: absolute;
+		    width: 18%;
+		    bottom: 0;
+		    left:0;
+		    padding: 2%;
+		    opacity: 0.8;
+		    z-index: 1000;
+		}
+		}
+	</style>
 </head>
 
 <body>
@@ -138,6 +160,11 @@
 									</li> -->
 						</ol>
 				</div>
+				<!-- <iframe src="../../static/silent.mp3" allow="autoplay; loop" id="audio" style="display:none"></iframe>
+	<a onclick="togglePlay()" href="#" title="Audio" >
+    	<img class ="img icon" src="https://cdn4.iconfinder.com/data/icons/proglyphs-multimedia/512/Speaker-512.png">
+	</a>
+	<audio autoplay loop id="my_audio" src="../../static/website.mp3"> -->
 			</div>
 		</div>
 	</div>
@@ -154,6 +181,28 @@
 		}
 }
 </style>
+<script type="text/javascript">
+		  var myAudio = document.getElementById("my_audio");
+		  console.log(myAudio);
+	      var isPlaying = true;
+	      
+	      function togglePlay() {
+	        
+	        if (isPlaying) {
+	          myAudio.pause();
+	        } else {
+	          myAudio.play();
+	          
+	        }
+	        
+	      };
+	      myAudio.onplaying = function() {
+	        isPlaying = true;
+	      };
+	      myAudio.onpause = function() {
+	        isPlaying = false;
+	      };
+	</script>
 	<script src="../../static/js/jquery-3.2.1.min.js"></script>
 	<script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>
 	<script src="../../static/styles/bootstrap-4.1.2/bootstrap.min.js"></script>
