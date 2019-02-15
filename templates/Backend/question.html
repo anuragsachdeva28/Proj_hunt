@@ -16,14 +16,21 @@
 <link rel="stylesheet" type="text/css" href="../../static/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="../../static/styles/responsive.css">
 <link rel="stylesheet" type="text/css" href="../../static/styles/nav.css" >
+<style type="text/css">
+	.home_text p{
+    font-size: 18px;
+    color: #fff;
+    line-height: 2.14;
+}
+</style>
 </head>
 <body>
-
 {% if wrong %}
 	<script type="text/javascript">
 		alert("Sorry Wrong Answer !!")
 	</script>
 {% endif %}
+
 
 <div class="super_container">
 	
@@ -39,21 +46,22 @@
 					<span></span>
 				</div>
 				<ul class="nav-list">
-					<li class="nav-item"><a href="dashboard.html" target="_blank">DashBoard</a></li>
-					<li class="nav-item"><a href="login.html" target="_blank">Log In</a></li>
+					<li class="nav-item"><a href="/leaderboard" target="_blank">Leaderboard</a></li>
+					<li class="nav-item"><a href="/" target="_blank">Log In</a></li>
 					<!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
-					<li class="nav-item"><a href="rules.html" target="_blank">Rules</a></li>
+					<li class="nav-item"><a href="/rules" target="_blank">Rules</a></li>
 				</ul>
 			</nav>
 		</header>
 
 	<!-- Menu -->
 	
-	<div class="menu_overlay trans_400"></div>
+	<!-- <div class="menu_overlay trans_400"></div> -->
 
 	<!-- Home -->
 
 	<div class="home">
+
 		<div class="home_background"></div>
 		<div class="background_image background_city" style="background-image:url(../../static/images/city.png)"></div>
 		<div class="cloud cloud_1"><img src="../../static/images/cloud.png" alt=""></div>
@@ -65,8 +73,8 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Hello World!</div>
-                            <div class="home_text" style="font-size: 18px;">Welcome to the Treasure Hunt there will be 10 levels that you'll have to clear inorder to find the treasure. This is Level 1 its also known as the idiot round. Try to "Inspect" for the password ;)</div>
+							<div class="home_title">{{title}}</div>
+                            <div class="home_text" style="font-size: 18px;">{{desc|linebreaks}}</div>
 						</div>
 					</div>
 				</div>
@@ -101,6 +109,15 @@
 
 
 </div>
+<style type="text/css">
+@media only screen and (min-width: 992px){
+	.nav-item a:hover{
+		    background-color: #1befc5;
+		    border-radius: .4rem;
+		    color: black;
+		}
+}
+</style>
 
 <script src="../../static/js/jquery-3.2.1.min.js"></script>
 <script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>

@@ -77,8 +77,9 @@ Leaderboard
   z-index: 2;
   top: 15px;
   left: 15px;
-  width: 20px;
-  height: 20px;
+  width: auto;
+  height: auto;
+  padding: 5px;
   line-height: 20px;
   color: black;
   background: #fff;

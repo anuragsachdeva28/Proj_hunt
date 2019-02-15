@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Sign Up</title>
+    <title>Treasuro | Register</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="HostSpace template project">
@@ -20,15 +20,15 @@
         .home{
             height: 125vh;
         }
+        @media screen and (max-width: 840px){
+            .home{
+                height: 125vh;
+            }
+        }
     </style>
 </head>
 
 <body>
-    {% if bool %}
-        <script type="text/javascript">
-            alert("Wrong Sign up ID !!")
-        </script>
-    {% endif %}
 
 
     <div class="super_container">
@@ -45,17 +45,17 @@
                         <span></span>
                     </div>
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="/" target="_blank">DashBoard</a></li>
-                        <li class="nav-item"><a href="/" target="_blank">Log In</a></li>
-                        <li class="nav-item"><a href="/register" target="_blank">Sign Up</a></li>
-                        <li class="nav-item"><a href="/rules" target="_blank">Rules</a></li>
+                        <li class="nav-item"><a href="/question">DashBoard</a></li>
+                        <li class="nav-item"><a href="/">Log In</a></li>
+                        <!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
+                        <li class="nav-item"><a href="/rules">Rules</a></li>
                     </ul>
                 </nav>
             </header>
 
         <!-- Menu -->
 
-        <div class="menu_overlay trans_400"></div>
+        <!-- <div class="menu_overlay trans_400"></div> -->
 
         <!-- Home -->
 
@@ -65,11 +65,11 @@
             <div class="cloud cloud_1"><img src="../../static/images/cloud.png" alt=""></div>
             <div class="cloud cloud_2"><img src="../../static/images/cloud.png" alt=""></div>
             <div class="cloud cloud_3"><img src="../../static/images/cloud_full.png" alt=""></div>
-            <div class="cloud cloud_4"><img src="../static/images/cloud.png" alt=""></div>
+            <div class="cloud cloud_4"><img src="../../static/images/cloud.png" alt=""></div>
             <div class="container_box sign_up_box">
                 <div class="new_user" id="l1">
                     <p>Already a User?</p>
-                    <button class="domain_search_button">Log in</button>
+                    <a href="/"><button class="domain_search_button">Log in</button></a>
                 </div>
 
                 <div class="empty" id="l2"></div>
@@ -106,28 +106,28 @@
                             <span class="bar"></span>
                             <label>Password</label>
                         </div>
-
                         <div class="group">
                             <input type="text" name="signid" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Signup Id</label>
+                            <label>Regis-ID</label>
                         </div>
 
                         <div class="group">
                             <input type="number" name="number" required>
                             <span class="highlight"></span>
                             <span class="bar"></span>
-                            <label>Contact No</label>
+                            <label>Contact no.</label>
                         </div>
+
                     
                         <div class="row">
                             <div class="col-md-6 col-6 loginbttm login-btm login-button" style="float: left">
-                                <button class="domain_search_button sign-bt" id="b1">Log In</button>
+                                <button class="domain_search_button sign-bt" id="b1" type="button" onclick="location.href='/'">Log In</button>
                             </div>
                     
                             <div class="col-md-6 col-6 loginbttm login-btm login-button">
-                                <button class="domain_search_button sign-bt" id="b2">Register</button>
+                                <button class="domain_search_button sign-bt" id="b2" type="submit">Register</button>
                             </div>
                         </div>
                         <!-- <div class=" loginbttm login-btm login-button" style="float: left">
@@ -147,6 +147,15 @@
 
 
     </div>
+<style type="text/css">
+@media only screen and (min-width: 992px){
+    .nav-item a:hover{
+            background-color: #1befc5;
+            border-radius: .4rem;
+            color: black;
+        }
+}
+</style>
 
     <script src="../../static/js/jquery-3.2.1.min.js"></script>
     <script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>

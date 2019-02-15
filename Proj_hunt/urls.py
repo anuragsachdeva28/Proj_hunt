@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from .views import index,register_page,rules,question
-#from verify.views import gen
+from verify.views import gen2
 from .views import leaderboard
 
 urlpatterns = [
@@ -27,6 +27,7 @@ urlpatterns = [
     path('rules',rules),
     path('question',question),
     path('leaderboard',leaderboard),
+    path('YRxJ65c32AhLRZ8rh7ID',gen2)
 
     #path('gen',gen),
 ]

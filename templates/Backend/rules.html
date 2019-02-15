@@ -15,16 +15,86 @@
     <link rel="stylesheet" type="text/css" href="../../static/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="../../static/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="../../static/styles/responsive.css">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'styles/rules.css' %}">
+    <link rel="stylesheet" type="text/css" href="../../static/styles/login.css">
+    <link rel="stylesheet" type="text/css" href="../../static/styles/rules.css">
     <style>
-        .home{
-            height: 130vh;
+        
+        @media screen and (min-width: 840px) {
+            .home{
+                height: 180vh;
+            }
+            .container_box{
+                flex-direction: column-reverse;
+            }
         }
+        @media screen and (min-width: 1024px) {
+            .home{
+                height: 155vh;
+            }
+        }
+        @media screen and (min-width: 1900px) {
+            .home{
+                height: 100vh;
+            }
+        }
+
         @media screen and (max-width: 840px) {
             .home{
-                height: 450vh;
+                height: 180vh;
             }
+            .home .container_box .login_main{
+                width: 90vw;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            .home{
+                height: 200vh;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .home{
+                height: 220vh;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .home{
+                height: 250vh;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .home{
+                height: 300vh;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .home{
+                height: 340vh;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .home{
+                height: 360vh;
+            }
+        }
+
+        .new_user .domain_search_button{
+            /* margin: 2vh 0; */
+            width: 10vw;
+            text-align: center;
+        }
+
+        .container_box{
+            align-items: center;
+        }
+
+        .domain_search_button{
+            position: absolute;
         }
     </style>
 </head>
@@ -44,18 +114,19 @@
                     <div class="hamburger-menu">
                         <span></span>
                     </div>
+
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="/question" target="_blank">DashBoard</a></li>
-                        <li class="nav-item"><a href="/" target="_blank">Log In</a></li>
+                        <li class="nav-item"><a href="1.html">DashBoard</a></li>
+                        <li class="nav-item"><a href="login.html">Log In</a></li>
                         <!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
-                        <li class="nav-item"><a href="/rules" target="_blank">Rules</a></li>
+                        <li class="nav-item"><a href="rules.html">Rules</a></li>
                     </ul>
                 </nav>
             </header>
 
         <!-- Menu -->
 
-        <div class="menu_overlay trans_400"></div>
+        <!-- <div class="menu_overlay trans_400"></div> -->
 
         <!-- Home -->
 
@@ -74,34 +145,34 @@
                     </div>
                     <div class="rules_list">
                         <ul>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, totam optio, veritatis
-                                ad
-                                officia fuga ratione illo, vero amet nisi placeat aliquid voluptatu</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur deleniti
-                                cupiditate corporis minima! Sunt voluptate eaque fuga minima est neque repellendus
-                                voluptas
-                                corrupti iusto enim, laudantium iure esse ducimus.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius animi aliquam a ex
-                                necessitatibus recusandae blanditiis numquam asperiores error, officia, aperiam
-                                delectus
-                                illo eum! Quam id quis accusantium eligendi aut?</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita suscipit ipsum
-                                voluptatibus sequi. Quas distinctio sed veniam qui, quia officia. Modi illum ut facilis
-                                debitis officia dolor mollitia harum.</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda fugiat eaque,
-                                reprehenderit distinctio, esse nulla ipsam ipsa labore totam accusantium enim ea.
-                                Accusantium, fugiat corporis consectetur itaque doloremque temporibus eos!</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsam cumque eaque omnis
-                                quod, necessitatibus officia, reiciendis ipsa ut inventore, rerum tenetur est vitae
-                                quas
-                                quis maiores dolorum in libero.</li>
+                            <li><b>Game Play:</b> In every level, you will be provided with a clue which will be pointing towards a location. Once you crack the clue, you will find a QR code which will give you access to a string. This string will lead you to the next level.</li>
+                            <li><b>Duration:</b> This is an online event which will last for two days. </li>
+                            <li><b>Submissions:</b> Every level holds 10 points. After each wrong submission, the total points will get deducted by 2. Once the score reaches 4, it will remain constant.
+For eg., 10->8->6->4->constant
+The maximum number of attempts for each level is 5
+All the submissions of the levels will be recorded in our DB so play safe.</li>
+                            <li><b>Solutions:</b> Every clue will be pointing towards only one location, which can be online or offline. </li>
+                            <li><b>Appeals:</b> There are no appeals in this game but if you think there is an error, please feel free to contact us.</li>
+                            <!-- <li><b>Judgements:</b> The society holds the right to disqualify any individual in case of use any unethical means.
+*All the decisions made by the society are final.</li> -->
+                            <!-- <li><b>Play Fair:</b> Cheating can land you with disqualification. So have fun and play fair.</li> -->
                         </ul>
                     </div>
                 </div>
+                <button class="domain_search_button" onclick="location.href='/question'">Begin Hunt!!!</button>
             </div>
+
         </div>
     </div>
-
+<style type="text/css">
+@media only screen and (min-width: 992px){
+    .nav-item a:hover{
+            background-color: #1befc5;
+            border-radius: .4rem;
+            color: black;
+        }
+}
+</style>
     <script src="../../static/js/jquery-3.2.1.min.js"></script>
     <script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>
     <script src="../../static/styles/bootstrap-4.1.2/bootstrap.min.js"></script>

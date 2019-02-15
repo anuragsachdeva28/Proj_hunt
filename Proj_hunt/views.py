@@ -1,5 +1,6 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth import get_user_model,authenticate,login
+from django.utils import timezone
 
 from .forms import RegisterForm,LoginForm
 
@@ -18,7 +19,11 @@ def index(request):
         user=authenticate(request,username=username,password=password)
         if user is not None:
             login(request,user)
-            return redirect('/rules')
+            pro=Profile.objects.get(email=username)
+            if pro.points>0:
+                return redirect('/question')
+            else:
+                return redirect('/rules')
         else:
             print('error')
     return render(request,"Backend/index.html",{})
@@ -57,7 +62,8 @@ def register_page(request):
                     admission=admission,
                     email=email,
                     number=number,
-                    signid=signid
+                    signid=signid,
+                    lastsub=timezone.now()
                 )
             new.save()
             login(request,new_user)
@@ -75,10 +81,13 @@ def register_page(request):
 def rules(request):
     if request.user.is_authenticated:
         pro=Profile.objects.get(email=request.user.username)
-        context={
-            "name":pro.name,
-        }
-        return render(request,"Backend/rules.html",context)
+        if not(pro.freeze):
+            context={
+                "name":pro.name,
+            }
+            return render(request,"Backend/rules.html",context)
+        else:
+            return render(request,"Backend/freeze.html",{})
     else:
         return render(request,"Backend/notfound.html",{})
 
@@ -93,40 +102,48 @@ def rules(request):
 def question(request):
     if request.user.is_authenticated:
         usr=Profile.objects.get(email=request.user.username)
-        if usr.level>2:
-            return render(request,'Backend/completed.html',{})
-        objs=question_model.objects.get(level=usr.level)
-        context={
-            'level':usr.level,
-            'title':objs.title,
-            'desc':objs.description,
-            'wrong':False
-        }
-        if request.POST:
-            ans=objs.correct_ans
-            ans1=request.POST.get('ans1')
-            if ans==ans1:
-                usr.level=usr.level+1
-                if usr.attempts<=3:
-                    usr.points=usr.points+10-((usr.attempts)*2)
+        if not(usr.freeze):
+            if usr.level>2:
+                return render(request,'Backend/completed.html',{})
+            objs=question_model.objects.get(level=usr.level)
+            context={
+                'level':usr.level,
+                'title':objs.title,
+                'desc':objs.description,
+                'wrong':False
+            }
+            if request.POST:
+                ans=objs.correct_ans
+                ans1=request.POST.get('ans1')
+                if ans==ans1:
+                    usr.level=usr.level+1
+                    if usr.attempts<=3:
+                        usr.points=usr.points+10-((usr.attempts)*2)
+                    else:
+                        usr.points=usr.points+4
+                    usr.attempts=0
+                    usr.lastsub=timezone.now()
+                    usr.save()
+                    if usr.level<=objs.top_level:
+                        objs=question_model.objects.get(level=usr.level)
+                        context={
+                            'level':usr.level,
+                            'title':objs.title,
+                            'desc':objs.description,
+                        }
+                    else:
+                        return render(request,'Backend/completed.html',{})
                 else:
-                    usr.points=usr.points+4
-                usr.attempts=0
-                usr.save()
-                if usr.level<=objs.top_level:
-                    objs=question_model.objects.get(level=usr.level)
-                    context={
-                        'level':usr.level,
-                        'title':objs.title,
-                        'desc':objs.description,
-                    }
-                else:
-                    return render(request,'Backend/completed.html',{})
-            else:
-                context['wrong']=True
-                usr.attempts=usr.attempts+1
-                usr.save()
-        return render(request,"Backend/question.html",context)
+                    context['wrong']=True
+                    usr.attempts=usr.attempts+1
+                    if usr.attempts>=5:
+                        usr.freeze=True
+                        usr.save()
+                        return render(request,'Backend/freeze.html',{})
+                    usr.save()
+            return render(request,"Backend/question.html",context)
+        else:
+            return render(request,"Backend/freeze.html",{})
     else:
         return render(request,"Backend/notfound.html",{})
 
@@ -134,16 +151,22 @@ def question(request):
 
 
 def leaderboard(request):
-    objs=Profile.objects.all().order_by('-points')
+    objs=Profile.objects.all()
     context={
         "object":objs,
     }
     if request.user.is_authenticated:
         obj=Profile.objects.filter(email=request.user.username).first()
+        count=0
+        for i in objs:
+            count=count+1
+            if i.email==obj.email:
+                break
         context={
             "hg":True,
             "point":obj.points,
             "object":objs,
+            "rank":count,
         }
 
     return render(request,'Backend/leaderboard.html',context)
