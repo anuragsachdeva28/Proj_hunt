@@ -92,12 +92,16 @@ def rules(request):
         if not(pro.freeze):
             context={
                 "name":pro.name,
+                "login":True
             }
             return render(request,"Backend/rules.html",context)
         else:
             return render(request,"Backend/freeze.html",{})
     else:
-        return render(request,"Backend/notfound.html",{})
+        context={
+            "login":False
+        }
+        return render(request,"Backend/rules.html",context)
 
 
 

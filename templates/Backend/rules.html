@@ -182,7 +182,11 @@ All the submissions of the levels will be recorded in our DB so play safe.</li>
                         </ul>
                     </div>
                 </div>
+                {% if login %}
                 <button class="domain_search_button" onclick="location.href='/question'">Begin Hunt!!!</button>
+                {% else %}
+                <button class="domain_search_button" onclick="location.href='/'">Home</button>
+                {% endif %}
                <!--  <iframe src="../../static/silent.mp3" allow="autoplay; loop" id="audio" style="display:none"></iframe>
     <a onclick="togglePlay()" href="#" title="Audio" >
         <img class ="img icon" src="https://cdn4.iconfinder.com/data/icons/proglyphs-multimedia/512/Speaker-512.png">
