@@ -7,6 +7,7 @@ from .forms import RegisterForm,LoginForm
 from user_detail.models import Profile
 from verify.models import verification
 from Questions.models import question_model
+import random
 
 User=get_user_model()
 
@@ -20,8 +21,11 @@ def index(request):
         if user is not None:
             login(request,user)
             pro=Profile.objects.get(email=username)
-            if pro.points>0:
-                return redirect('/question')
+            if pro.rules:
+                if request.GET.get('q')!=None:
+                    return redirect('/question?q='+request.GET.get('q'))
+                else:
+                    return redirect('/question')
             else:
                 return redirect('/rules')
         else:
@@ -41,6 +45,7 @@ def register_page(request):
     context = {
         "bool":False
     }
+    print(request.POST)
     if request.POST:
         name = request.POST.get("name")
         email=request.POST.get("email")
@@ -64,10 +69,12 @@ def register_page(request):
                     email=email,
                     number=number,
                     signid=signid,
-                    lastsub=timezone.now()
+                    lastsub=timezone.now(),
+                    rules=True
                 )
             new.save()
             login(request,new_user)
+
             return redirect('/rules')
         else:
             context={
@@ -104,7 +111,7 @@ def question(request):
     if request.user.is_authenticated:
         usr=Profile.objects.get(email=request.user.username)
         if not(usr.freeze):
-            if usr.level>3:
+            if usr.level>4:
                 return render(request,'Backend/completed.html',{})
             objs=question_model.objects.get(level=usr.level)
             context={
@@ -112,12 +119,55 @@ def question(request):
                 'title':objs.title,
                 'desc':objs.description,
                 'wrong':False,
-                'obj':objs
+                'obj':objs,
+                'correct':False,
+                'lucky':False,
+                'unlucky':False
             }
-            if request.POST:
+            if request.GET.get('q')!=None:
                 ans=objs.correct_ans
-                ans1=request.POST.get('ans1')
-                if ans==ans1:
+                ans1=request.GET.get('q')
+                if ans1=="CqCOHJwQMRzGVtPCO46m" and not(usr.q1):
+                    usr.q1=True
+                    asd=random.choice([1,0])
+                    if asd==1:
+                        usr.points=usr.points+10
+                        context['lucky']=True
+                    else:
+                        usr.points=usr.points-10
+                        context['unlucky']=True
+                    usr.save()
+                elif ans1=="JeWVPtXTB7vqCXKPhOdC" and not(usr.q2):
+                    usr.q2=True
+                    asd=random.choice([1,0])
+                    if asd==1:
+                        usr.points=usr.points+10
+                        context['lucky']=True
+                    else:
+                        usr.points=usr.points-10
+                        context['unlucky']=True
+                    usr.save()
+                elif ans1=="szKEehshvHyRnljQW9UM" and not(usr.q3):
+                    usr.q3=True
+                    asd=random.choice([1,0])
+                    if asd==1:
+                        usr.points=usr.points+10
+                        context['lucky']=True
+                    else:
+                        usr.points=usr.points-10
+                        context['unlucky']=True
+                    usr.save()
+                elif ans1=="Nk7fclTlPrfYjUaMP72G" and not(usr.q4):
+                    usr.q4=True
+                    asd=random.choice([1,0])
+                    if asd==1:
+                        usr.points=usr.points+10
+                        context['lucky']=True
+                    else:
+                        usr.points=usr.points-10
+                        context['unlucky']=True
+                    usr.save()
+                elif ans==ans1:
                     usr.level=usr.level+1
                     if usr.attempts<=3:
                         usr.points=usr.points+10-((usr.attempts)*2)
@@ -132,7 +182,8 @@ def question(request):
                             'level':usr.level,
                             'title':objs.title,
                             'desc':objs.description,
-                            'obj':objs
+                            'obj':objs,
+                            'correct':True
                         }
                     else:
                         return render(request,'Backend/completed.html',{})
@@ -148,7 +199,10 @@ def question(request):
         else:
             return render(request,"Backend/freeze.html",{})
     else:
-        return render(request,"Backend/notfound.html",{})
+        if request.GET.get('q')!=None:
+            return redirect('/?q='+request.GET.get('q'))
+        else:
+            return redirect('/')
 
 
 

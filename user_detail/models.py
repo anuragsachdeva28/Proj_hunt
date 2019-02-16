@@ -22,6 +22,11 @@ class Profile(models.Model):
     points=models.IntegerField(default=0)
     freeze=models.BooleanField(default=False)
     lastsub = models.DateTimeField(auto_now=False)
+    rules=models.BooleanField(default=False)
+    q1=models.BooleanField(default=False)
+    q2=models.BooleanField(default=False)
+    q3=models.BooleanField(default=False)
+    q4=models.BooleanField(default=False)
 
 
     class Meta:

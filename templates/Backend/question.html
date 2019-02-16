@@ -28,9 +28,33 @@
 <body>
 {% if wrong %}
 	<script type="text/javascript">
-		alert("Sorry Wrong Answer !!")
+		alert("Sorry Wrong Answer 😵😵😵")
 	</script>
 {% endif %}
+
+
+{% if correct %}
+<script type="text/javascript">
+	alert("Congrats You are Leveled up 🤩🤩🤩")
+</script>
+{% endif %}
+
+
+{% if unlucky %}
+	<script type="text/javascript">
+		alert("Sorry You are unlucky 😵😵😵")
+	</script>
+{% endif %}
+
+
+{% if lucky %}
+<script type="text/javascript">
+	alert("Congrats You are Lucky 🤩🤩🤩")
+</script>
+{% endif %}
+
+
+
 
 
 <div class="super_container">
@@ -83,7 +107,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<!-- <div class="row">
 					<div class="col-lg-10 offset-lg-1">
 						<div class="domain_search_form_container">
 							<form method="POST" id="domain_search_form" class="domain_search_form d-flex flex-md-row flex-column align-items-center justify-content-start">{% csrf_token %}
@@ -99,7 +123,7 @@
 							</form>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
