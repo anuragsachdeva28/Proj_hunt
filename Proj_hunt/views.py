@@ -46,7 +46,8 @@ def index(request):
 
 def register_page(request):
     context = {
-        "bool":False
+        "bool":False,
+        "exist":False
     }
     print(request.POST)
     if request.POST:
@@ -60,11 +61,15 @@ def register_page(request):
         if objs.count()>0:
             if objs.first().signid!='archit':
                 objs.first().delete()
-            new_user=User.objects.create_user(
-                    username=email,
-                    email=email,
-                    password=password
-                )
+            try:
+                new_user=User.objects.create_user(
+                        username=email,
+                        email=email,
+                        password=password
+                    )
+            except:
+                context['exist']=True
+                return render(request,"Backend/register.html",context)
             new=Profile.objects.create(
                     leader=new_user,
                     name=name,
