@@ -14,6 +14,9 @@ User=get_user_model()
 
 
 def index(request):
+    context={
+    'login':False
+    }
     if request.POST:
         username=request.POST.get('email')
         password=request.POST.get('password')
@@ -29,8 +32,8 @@ def index(request):
             else:
                 return redirect('/rules')
         else:
-            print('error')
-    return render(request,"Backend/index.html",{})
+            context['login']=True
+    return render(request,"Backend/index.html",context)
 
 
 
