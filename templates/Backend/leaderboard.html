@@ -98,7 +98,7 @@
 					<ol>
 						{% for obj in object %}
 							<li>
-								<mark>{{ obj.name }}</mark>
+								<mark>{{ obj.name|truncatewords:1 }}</mark>
 								<small>{{ obj.points }}</small>
 							</li>
 						{% endfor %}
