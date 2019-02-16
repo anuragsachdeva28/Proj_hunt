@@ -126,51 +126,64 @@ def question(request):
                 'obj':objs,
                 'correct':False,
                 'lucky':False,
-                'unlucky':False
+                'unlucky':False,
+                'again':False
             }
             if request.GET.get('q')!=None:
                 ans=objs.correct_ans
                 ans1=request.GET.get('q')
-                if ans1=="CqCOHJwQMRzGVtPCO46m" and not(usr.q1):
-                    usr.q1=True
-                    asd=random.choice([1,0])
-                    if asd==1:
-                        usr.points=usr.points+10
-                        context['lucky']=True
+                if ans1=="CqCOHJwQMRzGVtPCO46m":
+                    if not(usr.q1):
+                        usr.q1=True
+                        asd=random.choice([1,0])
+                        if asd==1:
+                            usr.points=usr.points+10
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            context['unlucky']=True
+                        usr.save()
                     else:
-                        usr.points=usr.points-10
-                        context['unlucky']=True
-                    usr.save()
-                elif ans1=="JeWVPtXTB7vqCXKPhOdC" and not(usr.q2):
-                    usr.q2=True
-                    asd=random.choice([1,0])
-                    if asd==1:
-                        usr.points=usr.points+10
-                        context['lucky']=True
+                        context['again']=True
+                elif ans1=="JeWVPtXTB7vqCXKPhOdC":
+                    if not(usr.q2):
+                        usr.q2=True
+                        asd=random.choice([1,0])
+                        if asd==1:
+                            usr.points=usr.points+10
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            context['unlucky']=True
+                        usr.save()
                     else:
-                        usr.points=usr.points-10
-                        context['unlucky']=True
-                    usr.save()
-                elif ans1=="szKEehshvHyRnljQW9UM" and not(usr.q3):
-                    usr.q3=True
-                    asd=random.choice([1,0])
-                    if asd==1:
-                        usr.points=usr.points+10
-                        context['lucky']=True
+                        context['again']=True
+                elif ans1=="szKEehshvHyRnljQW9UM":
+                    if not(usr.q3):
+                        usr.q3=True
+                        asd=random.choice([1,0])
+                        if asd==1:
+                            usr.points=usr.points+10
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            context['unlucky']=True
+                        usr.save()
                     else:
-                        usr.points=usr.points-10
-                        context['unlucky']=True
-                    usr.save()
-                elif ans1=="Nk7fclTlPrfYjUaMP72G" and not(usr.q4):
-                    usr.q4=True
-                    asd=random.choice([1,0])
-                    if asd==1:
-                        usr.points=usr.points+10
-                        context['lucky']=True
+                        context['again']=True
+                elif ans1=="Nk7fclTlPrfYjUaMP72G":
+                    if not(usr.q4):
+                        usr.q4=True
+                        asd=random.choice([1,0])
+                        if asd==1:
+                            usr.points=usr.points+10
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            context['unlucky']=True
+                        usr.save()
                     else:
-                        usr.points=usr.points-10
-                        context['unlucky']=True
-                    usr.save()
+                        context['again']=True
                 elif ans==ans1:
                     usr.level=usr.level+1
                     if usr.attempts<=3:
