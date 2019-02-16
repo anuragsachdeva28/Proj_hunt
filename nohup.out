@@ -39,3 +39,2189 @@
 [16/Feb/2019 14:53:06] "GET /admin/user_detail/profile/ HTTP/1.1" 200 4370
 [16/Feb/2019 14:53:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
 [16/Feb/2019 14:53:09] "GET /admin/ HTTP/1.1" 200 8248
+[16/Feb/2019 14:54:31] "GET /admin/ HTTP/1.1" 200 8248
+[16/Feb/2019 14:56:09] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 14:56:10] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:00:29] "GET /question?q=check HTTP/1.1" 302 0
+[16/Feb/2019 15:00:30] "GET /?q=check HTTP/1.1" 200 6697
+[16/Feb/2019 15:00:30] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:00:31] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:00:31] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:00:31] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:00:31] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:00:31] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:00:31] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:00:31] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:00:31] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:31] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:00:32] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:00:32] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:00:32] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:00:32] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:00:33] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:00:33] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:00:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:33] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:00:33] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:00:33] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:00:34] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:00:34] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:00:34] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:00:34] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:00:34] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:00:35] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:00:35] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:00:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:36] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:00:44] "POST /?q=check HTTP/1.1" 200 6697
+[16/Feb/2019 15:00:44] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:00:45] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:45] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:00:46] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:46] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:00:49] "GET /leaderboard HTTP/1.1" 200 6636
+[16/Feb/2019 15:00:49] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 15:00:53] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:00:55] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:00:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:06] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:02:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:07] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:02:08] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:14] "POST / HTTP/1.1" 200 6697
+[16/Feb/2019 15:02:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:15] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:02:16] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:22] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:02:23] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:24] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:24] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:24] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:02:25] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:02:32] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:03:09] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 15:03:10] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 15:03:14] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 15:03:15] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 15:03:47] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:03:48] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:03:49] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:03:50] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:03:59] "GET /question?q=Treasuro HTTP/1.1" 200 5869
+[16/Feb/2019 15:04:01] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 15:04:02] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:04:19] "GET /leaderboard HTTP/1.1" 200 6785
+[16/Feb/2019 15:04:30] "GET /question HTTP/1.1" 200 5775
+[16/Feb/2019 15:04:45] "GET /question?q=check HTTP/1.1" 200 5858
+[16/Feb/2019 15:04:53] "GET /media/files/821774381169.jpg HTTP/1.1" 200 104083
+Not Found: /favicon.ico
+[16/Feb/2019 15:04:55] "GET /favicon.ico HTTP/1.1" 404 2882
+[16/Feb/2019 15:05:16] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 15:05:17] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 15:05:17] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 15:05:32] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 15:05:32] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 15:05:35] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:05:36] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:05:36] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:05:37] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:05:37] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:05:38] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:05:39] "GET /leaderboard HTTP/1.1" 200 6876
+[16/Feb/2019 15:05:56] "GET /question HTTP/1.1" 200 5764
+[16/Feb/2019 15:05:58] "GET /static/styles/nav.css HTTP/1.1" 304 0
+[16/Feb/2019 15:06:16] "GET /question?q=goforfile HTTP/1.1" 200 5814
+[16/Feb/2019 15:06:27] "GET /leaderboard HTTP/1.1" 200 6876
+[16/Feb/2019 15:06:39] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 15:07:28] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2019 - 14:50:41
+Django version 2.1.5, using settings 'Proj_hunt.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('223.225.19.97', 7246)
+----------------------------------------
+error
+----------------------------------------
+Exception happened during processing of request from ('106.198.200.182', 25198)
+----------------------------------------
+error
+<QueryDict: {}>
+<QueryDict: {'number': ['9667580383'], 'signid': ['archit'], 'email': ['ssshristiaug90@gmail.com'], 'password': ['treasuro'], 'csrfmiddlewaretoken': ['F5Y395URfsKzNUqyrLr9O2ajqbdSgsLBql8rFGTpJKAMD9HyeFyPlz6t6Q8xr551'], 'admission': ['18IT107'], 'name': ['Shristi Singh']}>
+<QueryDict: {}>
+<QueryDict: {'number': ['7275590010'], 'signid': ['archit'], 'email': ['Sush18nov95@gmail.com'], 'password': ['archsushmi53'], 'csrfmiddlewaretoken': ['9bFAeuo2cM9qVJa35eIXGubg4euFjEzgQ17EDu3albwotCFomYqlVlCJP3jO8gpx'], 'admission': ['16dlcs099'], 'name': ['SUSHMITA GUPTA']}>
+[16/Feb/2019 15:12:56] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:12:57] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:12:57] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:12:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:12:57] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:57] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:12:58] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:58] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:12:59] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:13:05] "POST / HTTP/1.1" 200 6791
+[16/Feb/2019 15:13:06] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:06] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:13:07] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:13:10] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:13:10] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:13:11] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:13:11] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:13:11] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:13:12] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:18:27] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:18:27] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:28] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:18:29] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:09] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:23:09] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:23:09] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:23:09] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:23:10] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:23:10] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:23:10] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:23:10] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:23:11] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:23:11] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:23:11] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:23:11] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:23:11] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:23:12] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:23:12] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:23:12] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:23:12] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:23:12] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:23:12] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:23:13] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:23:13] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:23:13] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:23:13] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:23:13] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:23:13] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:23:13] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:23:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:14] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:23:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:16] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 15:23:35] "GET /rules HTTP/1.1" 200 9259
+[16/Feb/2019 15:23:35] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 15:23:54] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:23:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:55] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:23:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:55] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:23:56] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:23:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:23:57] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:23:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Internal Server Error: /leaderboard
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 240, in leaderboard
+    if i.email==obj.email:
+AttributeError: 'NoneType' object has no attribute 'email'
+[16/Feb/2019 15:24:02] "GET /leaderboard HTTP/1.1" 500 64173
+Internal Server Error: /leaderboard
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 240, in leaderboard
+    if i.email==obj.email:
+AttributeError: 'NoneType' object has no attribute 'email'
+[16/Feb/2019 15:24:03] "GET /leaderboard HTTP/1.1" 500 63886
+[16/Feb/2019 15:24:10] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:24:10] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:10] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:10] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:10] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:10] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:24:10] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:10] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:24:11] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:24:11] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:11] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:24:11] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:12] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:24:15] "POST / HTTP/1.1" 302 0
+[16/Feb/2019 15:24:16] "GET /question HTTP/1.1" 200 5274
+[16/Feb/2019 15:24:17] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 15:24:17] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:17] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:18] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /leaderboard HTTP/1.1" 200 6876
+[16/Feb/2019 15:24:20] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/styles/leaderboard.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:20] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:24:21] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:24:22] "GET /static/images/icon.jpg HTTP/1.1" 304 0
+[16/Feb/2019 15:25:05] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:25:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:25:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:25:06] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:25:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:25:08] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:26:25] "GET /leaderboard HTTP/1.1" 200 6818
+[16/Feb/2019 15:26:25] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 15:26:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:26:34] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:26:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:26:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:26:35] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:27:05] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 15:27:06] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:27:07] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:07] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:07] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:07] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:08] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:09] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:09] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:09] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:09] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:27:10] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:27:20] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:27:21] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:27:21] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:27:22] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:27:22] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:28:28] "GET /static/styles/rules.css HTTP/1.1" 304 0
+[16/Feb/2019 15:28:28] "GET /rules HTTP/1.1" 200 9259
+[16/Feb/2019 15:29:45] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:29:45] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:29:54] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:29:55] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:29:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:29:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:29:56] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:31:31] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:31:32] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:32] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:33] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:33] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:33] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:34] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:34] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:34] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:34] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:31:35] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:36] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:53] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:53] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:53] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:53] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:54] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:55] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:55] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:55] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:55] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/images/icon.jpg HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:56] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:57] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:31:57] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:31:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:58] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:58] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:31:59] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:31:59] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:32:03] "GET /rules HTTP/1.1" 200 9259
+[16/Feb/2019 15:32:06] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:32:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:07] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:32:07] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:32:07] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:32:19] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:32:20] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:32:20] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:32:20] "GET /question HTTP/1.1" 302 0
+[16/Feb/2019 15:32:20] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:32:20] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:32:21] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:32:21] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:32:21] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:32:21] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:32:21] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:21] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:32:21] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:32:21] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:32:21] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:21] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:21] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:32:21] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:32:22] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:32:22] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:22] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:32:22] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:32:22] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:32:22] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:22] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:32:23] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:23] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:32:23] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:32:23] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:32:23] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:32:23] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:32:23] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:32:23] "GET /leaderboard HTTP/1.1" 200 6818
+[16/Feb/2019 15:32:23] "GET /static/website.mp3 HTTP/1.1" 200 221184
+[16/Feb/2019 15:32:24] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:32:24] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:32:24] "GET /static/styles/leaderboard.css HTTP/1.1" 304 0
+[16/Feb/2019 15:32:24] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:32:24] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:32:26] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:32:30] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:33:47] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:33:47] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:33:48] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:33:48] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:33:48] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:33:48] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:33:48] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:33:49] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:33:49] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:33:49] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:33:49] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:33:49] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:33:49] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:49] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:33:49] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:33:49] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:33:49] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 15:33:49] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:33:49] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:33:49] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:33:49] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:33:49] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:49] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:33:49] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:33:49] "GET /static/website.mp3 HTTP/1.1" 200 106496
+[16/Feb/2019 15:33:49] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:33:49] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:33:49] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:33:49] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:33:49] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:33:50] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:33:50] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:33:50] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:50] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:33:50] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:33:50] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:50] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:33:50] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:33:50] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:33:50] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:33:50] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:33:50] "GET /static/images/city.png HTTP/1.1" 200 28468
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:33:50] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:33:50] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:33:51] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:33:51] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:33:51] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:33:51] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:33:51] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:33:51] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:33:51] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:51] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:51] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:33:52] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 15:33:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:33:58] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:33:59] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:33:59] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:33:59] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:33:59] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:34:00] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:34:02] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:34:02] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:34:04] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:34:07] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:34:07] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 15:34:10] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:35:32] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:35:32] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:35:32] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:35:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:35:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:35:33] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:35:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:39:41] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:39:41] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:39:41] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:39:41] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:39:41] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:39:41] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:39:42] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:39:42] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:39:43] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:39:43] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:39:44] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:39:44] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:39:44] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:39:45] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:39:45] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:39:45] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:39:45] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:39:45] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:39:46] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:39:46] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:39:46] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:39:46] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:39:46] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:39:46] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:39:46] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:39:47] "GET /static/website.mp3 HTTP/1.1" 200 106496
+[16/Feb/2019 15:39:47] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:39:47] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:39:51] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 15:39:52] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 15:40:32] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 15:40:33] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 15:40:33] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 15:40:47] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:47] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:47] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:47] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:48] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:48] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:48] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:48] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:49] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:50] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:50] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:50] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:50] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:51] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 15:40:51] "GET /static/website.mp3 HTTP/1.1" 304 0
+[16/Feb/2019 15:40:51] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 15:40:51] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 15:40:51] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:40:51] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 15:40:52] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:40:52] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:40:52] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:40:53] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:40:56] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 15:40:57] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:41:30] "GET /question?q=Treasuro HTTP/1.1" 302 0
+[16/Feb/2019 15:41:31] "GET /?q=Treasuro HTTP/1.1" 200 6697
+[16/Feb/2019 15:41:31] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:41:32] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:41:32] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:41:32] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:41:32] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:41:32] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:41:32] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:41:32] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:41:32] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:41:32] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:41:32] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:41:32] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:41:33] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:41:33] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:41:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:41:33] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:41:33] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:41:33] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:41:33] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:41:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:41:34] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:41:34] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:41:34] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:41:35] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:41:35] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:41:35] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:41:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:41:35] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 15:41:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:41:36] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 15:41:43] "GET /leaderboard HTTP/1.1" 200 6965
+[16/Feb/2019 15:41:44] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 15:44:21] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:44:22] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 15:44:23] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 15:44:23] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 15:44:23] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 15:44:23] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 15:44:24] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:44:24] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:24] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 15:44:24] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 15:44:24] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 15:44:25] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 15:44:25] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 15:44:25] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:25] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 15:44:25] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 15:44:25] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 15:44:25] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 15:44:25] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 15:44:25] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 15:44:25] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:26] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 15:44:26] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 15:44:26] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 15:44:26] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 15:44:26] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 15:44:26] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 15:44:26] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 15:44:27] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:27] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:27] "GET /static/website.mp3 HTTP/1.1" 200 98304
+[16/Feb/2019 15:44:27] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:44:28] "GET /static/website.mp3 HTTP/1.1" 200 231168
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 15:45:45] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:45:46] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:45:46] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:45:46] "GET /static/website.mp3 HTTP/1.1" 200 81920
+[16/Feb/2019 15:45:50] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:45:50] "GET /static/styles/rules.css HTTP/1.1" 304 0
+[16/Feb/2019 15:45:50] "GET /rules HTTP/1.1" 200 9259
+[16/Feb/2019 15:45:51] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:45:51] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:45:52] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 15:45:52] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:45:53] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 15:46:36] "GET /leaderboard HTTP/1.1" 200 6965
+[16/Feb/2019 15:46:37] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 15:46:55] "GET /admin/ HTTP/1.1" 302 0
+[16/Feb/2019 15:46:56] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1983
+[16/Feb/2019 15:47:02] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[16/Feb/2019 15:47:03] "GET /admin/ HTTP/1.1" 200 8248
+[16/Feb/2019 15:47:07] "GET /admin/user_detail/profile/ HTTP/1.1" 200 5073
+[16/Feb/2019 15:47:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[16/Feb/2019 15:47:11] "GET /admin/user_detail/profile/14/change/ HTTP/1.1" 200 12173
+[16/Feb/2019 15:47:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[16/Feb/2019 15:49:22] "POST /admin/user_detail/profile/14/change/ HTTP/1.1" 302 0
+[16/Feb/2019 15:49:23] "GET /admin/user_detail/profile/ HTTP/1.1" 200 5249
+[16/Feb/2019 15:49:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[16/Feb/2019 15:59:55] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 15:59:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:31] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:00:31] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:00:32] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:00:32] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:00:32] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:00:32] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:00:32] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:00:33] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:00:33] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:00:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:34] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:00:34] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:00:34] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:00:34] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:00:34] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:00:34] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:00:35] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:00:35] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:00:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:35] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:00:36] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:00:37] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:00:37] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:00:37] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:00:37] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:00:37] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:00:38] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:39] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:00:39] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:00:39] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:39] "GET /static/website.mp3 HTTP/1.1" 200 139264
+[16/Feb/2019 16:00:40] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:00:42] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:00:57] "GET /static/styles/bootstrap-4.1.2/popper.js.map HTTP/1.1" 404 1832
+[16/Feb/2019 16:00:57] "GET /static/plugins/progressbar/progressbar.min.js.map HTTP/1.1" 404 1850
+[16/Feb/2019 16:00:57] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js.map HTTP/1.1" 404 1853
+[16/Feb/2019 16:00:58] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css.map HTTP/1.1" 404 1856
+[16/Feb/2019 16:01:36] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:01:36] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:01:36] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:01:36] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:01:37] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:01:37] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:01:37] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:01:37] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:01:37] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:01:37] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:01:37] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:01:37] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:01:37] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:01:37] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:01:38] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:01:38] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:01:38] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:01:38] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:01:38] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:01:38] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:01:38] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:01:38] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:01:38] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:01:38] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:01:38] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:01:38] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:01:39] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:01:39] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:01:39] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:01:39] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:01:40] "GET /static/website.mp3 HTTP/1.1" 200 147456
+[16/Feb/2019 16:01:40] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:01:40] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:01:40] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:02:30] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:02:31] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:02:31] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:02:31] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:02:31] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:02:31] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:02:32] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:02:32] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:02:32] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:02:32] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:02:32] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:02:32] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:02:32] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:02:32] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:02:32] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:02:33] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:02:33] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:02:33] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css.map HTTP/1.1" 404 1856
+[16/Feb/2019 16:02:33] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:02:33] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:02:33] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:02:33] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:02:33] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:02:33] "GET /static/styles/bootstrap-4.1.2/popper.js.map HTTP/1.1" 404 1832
+[16/Feb/2019 16:02:33] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:02:34] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:02:34] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:02:34] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:02:34] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:02:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:02:34] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js.map HTTP/1.1" 404 1853
+[16/Feb/2019 16:02:34] "GET /static/plugins/progressbar/progressbar.min.js.map HTTP/1.1" 404 1850
+[16/Feb/2019 16:02:35] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:05:04] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:05:05] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:05:05] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:05:05] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:05:05] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:05:05] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:05] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:05:05] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:05:05] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:05:05] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:05] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:05:05] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:05:06] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:05:06] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:05:06] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:05:06] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:05:06] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:05:06] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:05:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:06] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:05:06] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:05:06] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:05:07] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:05:07] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:05:07] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:05:07] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:05:07] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:05:07] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:05:07] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:05:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:08] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:08] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:05:08] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:05:09] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:08:02] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:08:03] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:08:03] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:08:04] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:08:04] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:08:04] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:08:04] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:08:04] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:08:04] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:08:04] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:08:05] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:08:05] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:08:05] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:08:05] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:08:05] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:08:05] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:08:05] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:08:05] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:08:06] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:08:06] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:08:06] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:08:06] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:08:06] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:08:06] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:08:06] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:08:06] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:08:06] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:08:06] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:08:07] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:14:02] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:14:02] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:03] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:03] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:03] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:03] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:03] "GET /static/styles/responsive.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:04] "GET /static/styles/login.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:05] "GET /static/styles/main_styles.css HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:06] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:07] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 16:14:09] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 16:14:09] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 16:14:09] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:09] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:09] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:10] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:14] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:14] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:14] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Feb/2019 16:14:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:14:16] "GET /static/website.mp3 HTTP/1.1" 200 122880
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:14:18] "GET /static/images/icon.jpg HTTP/1.1" 304 0
+[16/Feb/2019 16:14:25] "POST / HTTP/1.1" 200 6791
+[16/Feb/2019 16:14:27] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:14:32] "GET /static/website.mp3 HTTP/1.1" 200 122880
+[16/Feb/2019 16:14:33] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:14:37] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:14:40] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:14:48] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:14:49] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:14:49] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:14:49] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:14:49] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:14:50] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:14:50] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:14:50] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:14:50] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:14:50] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:14:51] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:14:51] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:14:52] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:14:52] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:14:52] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:14:52] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:14:52] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:14:52] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:14:52] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:14:52] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:14:53] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:14:53] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:14:53] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:14:53] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:14:53] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:14:53] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:14:53] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:14:54] "GET /static/website.mp3 HTTP/1.1" 200 106496
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:14:54] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:14:58] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:15:04] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:15:09] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:15:09] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:15:13] "GET /static/website.mp3 HTTP/1.1" 200 147456
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:15:13] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:15:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 66, in register_page
+    password=password
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+[16/Feb/2019 16:16:10] "POST /register/ HTTP/1.1" 500 162715
+Not Found: /favicon.ico
+[16/Feb/2019 16:16:17] "GET /favicon.ico HTTP/1.1" 404 2882
+[16/Feb/2019 16:18:32] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:18:33] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:18:33] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:18:33] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:18:33] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:18:33] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:18:33] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:18:33] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:18:34] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:18:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:18:34] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:18:34] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:18:34] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:18:34] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:18:34] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:18:34] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:18:34] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:18:34] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:18:35] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:18:35] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:18:35] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:18:35] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:18:35] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:18:35] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:18:35] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:18:36] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:18:36] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:18:36] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:18:37] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:18:38] "GET /static/website.mp3 HTTP/1.1" 200 231168
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:19:51] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 16:19:52] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:20:41] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:20:41] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:20:42] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:20:48] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 16:20:49] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:20:57] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 16:20:57] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:20:58] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 16:21:02] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 16:21:02] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 16:21:30] "GET /question?q=Treasuro HTTP/1.1" 200 5869
+[16/Feb/2019 16:21:42] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 16:21:43] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:21:44] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 16:21:49] "GET /question?q=CqCOHJwQMRzGVtPCO46m HTTP/1.1" 200 5864
+[16/Feb/2019 16:21:56] "GET /question?q=JeWVPtXTB7vqCXKPhOdC HTTP/1.1" 200 5866
+[16/Feb/2019 16:22:05] "GET /question?q=check HTTP/1.1" 200 5858
+[16/Feb/2019 16:22:14] "GET /question?q=goforfile HTTP/1.1" 200 5814
+[16/Feb/2019 16:22:27] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 16:22:28] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 16:22:29] "GET /leaderboard HTTP/1.1" 200 7127
+[16/Feb/2019 16:22:29] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 16:24:16] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:24:22] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 16:24:22] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:24:22] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:24:22] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:24:23] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:24:24] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:24:24] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:24:25] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:24:25] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:24:26] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:27] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:27] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:27] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:27] "GET /static/images/cloud.png HTTP/1.1" 304 0
+[16/Feb/2019 16:24:28] "GET /static/images/cloud_full.png HTTP/1.1" 304 0
+[16/Feb/2019 16:24:28] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:28] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:29] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:29] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:29] "GET /static/plugins/easing/easing.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:29] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:29] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:30] "GET /static/images/city.png HTTP/1.1" 304 0
+[16/Feb/2019 16:24:30] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Feb/2019 16:24:31] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:24:36] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:24:37] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:25:39] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:25:40] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:25:43] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 16:28:16] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:28:16] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:28:17] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:28:17] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:28:17] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:28:17] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:28:17] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:28:17] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:28:17] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:28:17] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:28:17] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:28:17] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:18] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:28:18] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:28:18] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:28:18] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:28:18] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:28:18] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:18] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:28:18] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:28:19] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:28:19] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:28:19] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:28:19] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:28:19] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:28:19] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:28:19] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:28:19] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:28:19] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:28:20] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:20] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:28:21] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:28:36] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 16:28:37] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:28:47] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:47] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:48] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:28:48] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:28:48] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:28:49] "GET /static/website.mp3 HTTP/1.1" 200 231168
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:28:52] "POST / HTTP/1.1" 200 6791
+[16/Feb/2019 16:29:01] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:02] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:29:02] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:29:02] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:09] "POST / HTTP/1.1" 200 6791
+[16/Feb/2019 16:29:11] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:12] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:29:12] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:29:25] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:29:25] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:26] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:29:26] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:29:26] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:51] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:29:51] "GET /question?q=Treasuro HTTP/1.1" 302 0
+[16/Feb/2019 16:29:52] "GET /?q=Treasuro HTTP/1.1" 200 6697
+[16/Feb/2019 16:29:53] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:29:53] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:29:53] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:29:53] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:29:53] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:29:53] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:29:54] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:29:54] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:29:54] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:54] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:29:54] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:29:54] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:29:54] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:29:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:55] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:29:55] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:29:55] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:29:55] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:29:55] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:29:56] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:29:56] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:29:56] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:29:56] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:29:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:56] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:29:56] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:29:56] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:29:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:29:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:30:20] "POST /register/ HTTP/1.1" 302 0
+[16/Feb/2019 16:30:21] "GET /rules HTTP/1.1" 200 9276
+[16/Feb/2019 16:30:21] "GET /static/styles/rules.css HTTP/1.1" 200 671
+[16/Feb/2019 16:31:17] "GET /question HTTP/1.1" 200 5418
+[16/Feb/2019 16:31:17] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 16:31:45] "GET /question?q=Treasuro HTTP/1.1" 200 5869
+[16/Feb/2019 16:32:10] "GET /question?q=check HTTP/1.1" 200 5858
+[16/Feb/2019 16:32:22] "GET /question?q=goforfile HTTP/1.1" 200 5814
+[16/Feb/2019 16:32:30] "GET /media/files/12584196560486.mpeg HTTP/1.1" 200 450367
+[16/Feb/2019 16:33:01] "GET /question?q=audio_is_here HTTP/1.1" 200 5274
+[16/Feb/2019 16:33:07] "GET /leaderboard HTTP/1.1" 200 7212
+[16/Feb/2019 16:33:08] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 16:33:21] "GET /leaderboard HTTP/1.1" 200 7212
+[16/Feb/2019 16:33:22] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[16/Feb/2019 16:33:27] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:33:28] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:33:28] "GET /static/website.mp3 HTTP/1.1" 200 57344
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:33:28] "GET /static/website.mp3 HTTP/1.1" 500 59
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 138, in run
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 279, in write
+    self._write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 463, in _write
+    result = self.stdout.write(data)
+  File "/usr/lib/python3.5/socket.py", line 593, in write
+    return self._sock.send(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 141, in run
+    self.handle_error()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 116, in handle_error
+    super().handle_error()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 368, in handle_error
+    self.finish_response()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 180, in finish_response
+    self.write(data)
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 274, in write
+    self.send_headers()
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 331, in send_headers
+    if not self.origin_server or self.client_is_modern():
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 344, in client_is_modern
+    return self.environ['SERVER_PROTOCOL'].upper() != 'HTTP/0.9'
+TypeError: 'NoneType' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 169, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 194, in handle_one_request
+    handler.run(self.server.get_app())
+  File "/usr/lib/python3.5/wsgiref/handlers.py", line 144, in run
+    self.close()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 111, in close
+    super().close()
+  File "/usr/lib/python3.5/wsgiref/simple_server.py", line 36, in close
+    self.status.split(' ',1)[0], self.bytes_sent
+AttributeError: 'NoneType' object has no attribute 'split'
+[16/Feb/2019 16:34:47] "GET /register/ HTTP/1.1" 200 9528
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 66, in register_page
+    password=password
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/models.py", line 150, in create_user
+    return self._create_user(username, email, password, **extra_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/models.py", line 144, in _create_user
+    user.save(using=self._db)
+  File "/usr/local/lib/python3.5/dist-packages/django/contrib/auth/base_user.py", line 73, in save
+    super().save(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 718, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 748, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 831, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/base.py", line 869, in _do_insert
+    using=using, raw=raw)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 1136, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/sql/compiler.py", line 1289, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/backends/sqlite3/base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+[16/Feb/2019 16:34:55] "POST /register/ HTTP/1.1" 500 163201
+Not Found: /favicon.ico
+[16/Feb/2019 16:34:58] "GET /favicon.ico HTTP/1.1" 404 2882
+[16/Feb/2019 16:36:58] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:36:59] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:36:59] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:37:00] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:37:00] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:37:04] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:37:06] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:37:08] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:37:17] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:37:20] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:37:21] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:37:26] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:37:26] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:37:26] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:37:26] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:37:27] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:37:27] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:37:29] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:37:30] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:37:30] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:37:35] "GET /register HTTP/1.1" 301 0
+[16/Feb/2019 16:37:36] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:37:37] "GET /register/ HTTP/1.1" 200 9528
+[16/Feb/2019 16:37:38] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:37:38] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:37:41] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:37:44] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:37:47] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[16/Feb/2019 16:37:54] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:37:57] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[16/Feb/2019 16:38:02] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:59:34] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:59:35] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[16/Feb/2019 16:59:35] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[16/Feb/2019 16:59:35] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[16/Feb/2019 16:59:35] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[16/Feb/2019 16:59:36] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:36] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[16/Feb/2019 16:59:36] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[16/Feb/2019 16:59:36] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[16/Feb/2019 16:59:36] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[16/Feb/2019 16:59:36] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[16/Feb/2019 16:59:36] "GET /static/images/city.png HTTP/1.1" 200 28468
+[16/Feb/2019 16:59:36] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[16/Feb/2019 16:59:36] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:36] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 16:59:36] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[16/Feb/2019 16:59:37] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[16/Feb/2019 16:59:37] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[16/Feb/2019 16:59:37] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[16/Feb/2019 16:59:37] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[16/Feb/2019 16:59:37] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[16/Feb/2019 16:59:37] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:37] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[16/Feb/2019 16:59:37] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[16/Feb/2019 16:59:37] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[16/Feb/2019 16:59:38] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[16/Feb/2019 16:59:38] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[16/Feb/2019 16:59:38] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[16/Feb/2019 16:59:38] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[16/Feb/2019 16:59:38] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:38] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:39] "GET /static/website.mp3 HTTP/1.1" 200 106496
+[16/Feb/2019 16:59:39] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:40] "GET /static/website.mp3 HTTP/1.1" 200 231168
+Internal Server Error: /leaderboard
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 240, in leaderboard
+    if i.email==obj.email:
+AttributeError: 'NoneType' object has no attribute 'email'
+[16/Feb/2019 16:59:53] "GET /leaderboard HTTP/1.1" 500 64425
+Internal Server Error: /leaderboard
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 240, in leaderboard
+    if i.email==obj.email:
+AttributeError: 'NoneType' object has no attribute 'email'
+[16/Feb/2019 16:59:53] "GET /leaderboard HTTP/1.1" 500 64084
+[16/Feb/2019 16:59:57] "GET / HTTP/1.1" 200 6697
+[16/Feb/2019 16:59:58] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:59] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:59] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 16:59:59] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[16/Feb/2019 17:00:00] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[16/Feb/2019 17:00:16] "POST / HTTP/1.1" 302 0
+[16/Feb/2019 17:00:17] "GET /question HTTP/1.1" 200 5274
+[16/Feb/2019 17:00:18] "GET /static/styles/nav.css HTTP/1.1" 200 3539
+[16/Feb/2019 17:00:22] "GET /leaderboard HTTP/1.1" 200 7212
+[16/Feb/2019 17:00:23] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[16/Feb/2019 17:03:12] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
