@@ -25,7 +25,7 @@ class question_model(models.Model):
     description=models.TextField(null=True)
     file=models.FileField(upload_to=upload_image_path,null=True,blank=True)
     correct_ans=models.CharField(max_length=500)
-    top_level=models.IntegerField(default=20)
+    top_level=models.IntegerField(default=34)
     line=models.BooleanField(default=False)
     file_check=models.BooleanField(default=False)
 

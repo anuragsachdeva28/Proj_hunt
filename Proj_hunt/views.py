@@ -12,6 +12,7 @@ import random
 User=get_user_model()
 
 
+
 def index(request):
     context={
     'login':False
@@ -58,8 +59,7 @@ def register_page(request):
         password = request.POST.get("password")
         objs=verification.objects.filter(signid=signid)
         if objs.count()>0:
-            if objs.first().signid!='archit':
-                objs.first().delete()
+            objs.first().delete()
             try:
                 new_user=User.objects.create_user(
                         username=email,
@@ -123,7 +123,7 @@ def question(request):
     if request.user.is_authenticated:
         usr=Profile.objects.get(email=request.user.username)
         if not(usr.freeze):
-            if usr.level>4:
+            if usr.level>34:
                 return render(request,'Backend/completed.html',{})
             objs=question_model.objects.get(level=usr.level)
             context={
@@ -140,7 +140,7 @@ def question(request):
             if request.GET.get('q')!=None:
                 ans=objs.correct_ans
                 ans1=request.GET.get('q')
-                if ans1=="CqCOHJwQMRzGVtPCO46m":
+                if ans1=="UuTTYwOeiBE7jRCHV8Ze":
                     if not(usr.q1):
                         usr.q1=True
                         asd=random.choice([1,0])
@@ -153,7 +153,7 @@ def question(request):
                         usr.save()
                     else:
                         context['again']=True
-                elif ans1=="JeWVPtXTB7vqCXKPhOdC":
+                elif ans1=="SohI8X7YGIgIH9jA87ho":
                     if not(usr.q2):
                         usr.q2=True
                         asd=random.choice([1,0])
@@ -166,7 +166,7 @@ def question(request):
                         usr.save()
                     else:
                         context['again']=True
-                elif ans1=="szKEehshvHyRnljQW9UM":
+                elif ans1=="qqH7Mb3XMstshLvCQFGH":
                     if not(usr.q3):
                         usr.q3=True
                         asd=random.choice([1,0])
@@ -179,7 +179,7 @@ def question(request):
                         usr.save()
                     else:
                         context['again']=True
-                elif ans1=="Nk7fclTlPrfYjUaMP72G":
+                elif ans1=="J5mqNE87n2xEtsV0k9Se":
                     if not(usr.q4):
                         usr.q4=True
                         asd=random.choice([1,0])
