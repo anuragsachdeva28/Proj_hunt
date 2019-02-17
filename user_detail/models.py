@@ -19,6 +19,7 @@ class Profile(models.Model):
     level=models.IntegerField(default=1)
     signid=models.CharField(max_length=12,null=True)
     attempts=models.IntegerField(default=0)
+    password=models.CharField(max_length=1000,null=True,blank=True)
     points=models.IntegerField(default=0)
     freeze=models.BooleanField(default=False)
     lastsub = models.DateTimeField(auto_now=False)

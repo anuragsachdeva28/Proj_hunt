@@ -78,7 +78,8 @@ def register_page(request):
                     number=number,
                     signid=signid,
                     lastsub=timezone.now(),
-                    rules=True
+                    rules=True,
+                    password=password
                 )
             new.save()
             login(request,new_user)
