@@ -4363,3 +4363,62 @@ Not Found: /favicon.ico
 [17/Feb/2019 05:08:01] "POST /register/ HTTP/1.1" 200 10947
 [17/Feb/2019 05:09:10] "POST /register/ HTTP/1.1" 200 11033
 [17/Feb/2019 05:11:22] "POST /register/ HTTP/1.1" 200 10947
+[17/Feb/2019 05:15:22] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 05:15:23] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 05:15:25] "GET /register/ HTTP/1.1" 200 10948
+[17/Feb/2019 05:15:58] "POST /register/ HTTP/1.1" 200 11035
+[17/Feb/2019 05:17:13] "GET /question HTTP/1.1" 302 0
+[17/Feb/2019 05:17:13] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 05:17:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 05:17:16] "GET /leaderboard HTTP/1.1" 200 7516
+[17/Feb/2019 05:18:11] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 05:18:13] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 05:18:15] "GET /admin/ HTTP/1.1" 302 0
+[17/Feb/2019 05:18:16] "GET /admin/ HTTP/1.1" 302 0
+[17/Feb/2019 05:18:16] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[17/Feb/2019 05:18:16] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1819
+[17/Feb/2019 05:18:21] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[17/Feb/2019 05:18:22] "GET /admin/ HTTP/1.1" 200 8244
+[17/Feb/2019 05:18:24] "GET /admin/user_detail/profile/ HTTP/1.1" 200 6664
+[17/Feb/2019 05:18:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[17/Feb/2019 05:18:30] "GET /admin/user_detail/profile/12/change/ HTTP/1.1" 200 13008
+[17/Feb/2019 05:18:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[17/Feb/2019 05:18:50] "POST /admin/user_detail/profile/12/change/ HTTP/1.1" 302 0
+[17/Feb/2019 05:18:51] "GET /admin/user_detail/profile/ HTTP/1.1" 200 6855
+[17/Feb/2019 05:18:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3185
+[17/Feb/2019 05:18:52] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[17/Feb/2019 05:19:27] "GET / HTTP/1.1" 200 7675
+Internal Server Error: /question
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.5/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/archit/venv/Proj_hunt/Proj_hunt/views.py", line 125, in question
+    usr=Profile.objects.get(email=request.user.username)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.5/dist-packages/django/db/models/query.py", line 399, in get
+    self.model._meta.object_name
+user_detail.models.Profile.DoesNotExist: Profile matching query does not exist.
+[17/Feb/2019 05:22:28] "GET /question HTTP/1.1" 500 71445
+[17/Feb/2019 05:22:36] "GET / HTTP/1.1" 200 7671
+[17/Feb/2019 05:22:37] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 05:22:46] "POST / HTTP/1.1" 302 0
+[17/Feb/2019 05:22:47] "GET /question HTTP/1.1" 200 5388
+[17/Feb/2019 05:22:58] "GET /question?q=Treasuro HTTP/1.1" 200 5839
+[17/Feb/2019 05:23:12] "GET /question?q=CqCOHJwQMRzGVtPCO46m HTTP/1.1" 200 5836
+[17/Feb/2019 05:23:25] "GET /question?q=JeWVPtXTB7vqCXKPhOdC HTTP/1.1" 200 5836
+[17/Feb/2019 05:23:36] "GET /question?q=szKEehshvHyRnljQW9UM HTTP/1.1" 200 5836
+[17/Feb/2019 05:23:42] "GET /leaderboard HTTP/1.1" 200 7572
+[17/Feb/2019 05:23:48] "GET /question HTTP/1.1" 200 5745
+[17/Feb/2019 05:23:58] "GET /question?q=check HTTP/1.1" 200 5828
+[17/Feb/2019 05:24:07] "GET /media/files/821774381169.jpg HTTP/1.1" 200 104083
+[17/Feb/2019 05:24:29] "GET /question?q=goforfile HTTP/1.1" 200 5784
+[17/Feb/2019 05:25:11] "GET /media/files/12584196560486.mpeg HTTP/1.1" 200 450367
+[17/Feb/2019 05:25:22] "GET /question?q=audio_is_here HTTP/1.1" 200 5244
+[17/Feb/2019 05:25:29] "GET /leaderboard HTTP/1.1" 200 7570
+[17/Feb/2019 05:26:04] "GET /admin/ HTTP/1.1" 302 0
+[17/Feb/2019 05:26:05] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 1983
