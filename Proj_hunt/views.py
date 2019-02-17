@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from django.contrib.auth import get_user_model,authenticate,login
+from django.contrib.auth import get_user_model,authenticate,login,logout
 from django.utils import timezone
 
 from .forms import RegisterForm,LoginForm
@@ -254,7 +254,10 @@ def leaderboard(request):
     return render(request,'Backend/leaderboard.html',context)
 
 
-
+def logout_page(request):
+    if request.user.is_authenticated:
+        logout(request)
+    return redirect('/')
 
 
 

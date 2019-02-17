@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import index,register_page,rules,question
+from .views import index,register_page,rules,question,logout_page
 from verify.views import gen2
 from .views import leaderboard
 from django.conf import settings
@@ -30,7 +30,8 @@ urlpatterns = [
     path('rules',rules),
     path('question',question),
     path('leaderboard',leaderboard),
-    path('YRxJ65c32AhLRZ8rh7ID',gen2)
+    path('YRxJ65c32AhLRZ8rh7ID',gen2),
+    path('logout',logout_page)
 
     #path('gen',gen),
 ]

@@ -140,7 +140,11 @@
 
                     <ul class="nav-list">
                         <li class="nav-item"><a href="/question">DashBoard</a></li>
-                        <li class="nav-item"><a href="/">Log In</a></li>
+                        {% if request.user.is_authenticated %}
+                        <li class="nav-item"><a href="/logout">Logout</a></li>
+                        {% else %}
+                        <li class="nav-item"><a href="/">Login</a></li>
+                        {% endif %}
                         <!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
                         <li class="nav-item"><a href="/rules">Rules</a></li>
                     </ul>

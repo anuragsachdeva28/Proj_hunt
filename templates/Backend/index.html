@@ -60,24 +60,62 @@
 		}
 	</style>
 	<style type="text/css">
-		@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+		.login_main{
+			width: 35vw;
+			top: -5vh;
+		}
+		.empty{
+			height:40vh;
+		}
 
-.info-msg,
-.success-msg,
-.warning-msg,
-.error-msg {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 3px 3px 3px 3px;
-}
-.success-msg {
-  color: #270;
-  background-color: #DFF2BF;
-}
-.warning-msg {
-  color: #9F6000;
-  background-color: #FEEFB3;
-}
+		@media screen and (max-width: 840px){
+			.login_main, .new_user {
+			    margin: auto;
+			    width: 85vw;
+			}
+		}
+
+		@media screen and (max-height: 560px) and (max-width: 840px) {
+			.home{
+				height: 110vh;
+			}
+		}
+		
+		@media screen and (max-height: 480px) and (max-width: 840px) {
+			.home{
+				height: 125vh;
+			}
+		}
+
+		@media screen and (max-height: 390px) and (max-width: 840px) {
+			.home{
+				height: 140vh;
+			}
+		}
+		
+		@media screen and (max-height: 340px) and (max-width: 840px) {
+			.home{
+				height: 160vh;
+			}
+		}
+
+		@media screen and (max-height: 480px) and (min-width: 840px) {
+			.home{
+				height: 110vh;
+			}
+		}
+
+		@media screen and (max-height: 400px) and (min-width: 840px) {
+			.home{
+				height: 120vh;
+			}
+		}
+
+		@media screen and (max-height: 340px) and (min-width: 840px) {
+			.home{
+				height: 140vh;
+			}
+		}
 	</style>
 </head>
 
@@ -102,7 +140,11 @@
 				</div>
 				<ul class="nav-list">
 					<li class="nav-item"><a href="/leaderboard">Leaderboard</a></li>
+					{% if request.user.is_authenticated %}
+					<li class="nav-item"><a href="/logout">Logout</a></li>
+					{% else %}
 					<li class="nav-item"><a href="/register">Register</a></li>
+					{% endif %}
 					<!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
 					<li class="nav-item"><a href="/rules">Rules</a></li>
 				</ul>
