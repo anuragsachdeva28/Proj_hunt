@@ -12,7 +12,6 @@ import random
 User=get_user_model()
 
 
-
 def index(request):
     context={
     'login':False
