@@ -3711,3 +3711,249 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 [17/Feb/2019 03:58:02] "GET /static/js/custom.js HTTP/1.1" 304 0
 [17/Feb/2019 03:58:02] "GET /static/website.mp3 HTTP/1.1" 304 0
 [17/Feb/2019 03:58:03] "GET /static/silent.mp3 HTTP/1.1" 304 0
+[17/Feb/2019 04:18:59] "GET / HTTP/1.1" 200 7070
+Performing system checks...
+
+System check identified no issues (0 silenced).
+February 16, 2019 - 17:21:50
+Django version 2.1.5, using settings 'Proj_hunt.settings'
+Starting development server at http://0.0.0.0:80/
+Quit the server with CONTROL-C.
+----------------------------------------
+Exception happened during processing of request from ('106.198.130.127', 4543)
+----------------------------------------
+<QueryDict: {}>
+----------------------------------------
+Exception happened during processing of request from ('106.199.3.247', 12963)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('180.151.89.57', 42688)
+----------------------------------------
+<QueryDict: {}>
+<QueryDict: {}>
+<QueryDict: {'signid': ['archit'], 'password': ['loki12345'], 'number': ['8639569552'], 'email': ['loki0987@gmail.com'], 'admission': ['16it089'], 'name': ['Loki'], 'csrfmiddlewaretoken': ['nMw6d473EC10E3ldrUxWX3sjHkf5KNBcNvDVvmKPhHDDbBTMfien8C1G47XtXjAJ']}>
+----------------------------------------
+Exception happened during processing of request from ('42.108.167.30', 45803)
+----------------------------------------
+<QueryDict: {}>
+<QueryDict: {'signid': ['archit'], 'password': ['9414404599'], 'number': ['9414404599'], 'email': ['gauravgeek23@gmail.com'], 'admission': ['18cs018'], 'name': ['gauravgeek'], 'csrfmiddlewaretoken': ['4ytLt6thy5YsrowPFe5DTPyRRquxoJaHj0cpXC4y6VfrhXsReywFfcinGiAAthco']}>
+----------------------------------------
+Exception happened during processing of request from ('42.108.167.30', 42436)
+----------------------------------------
+<QueryDict: {}>
+----------------------------------------
+Exception happened during processing of request from ('42.108.167.30', 11910)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('42.108.167.30', 54233)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('185.92.73.232', 28901)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46005)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46009)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46013)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46014)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46019)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46021)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46039)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46046)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46053)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46056)
+----------------------------------------
+<QueryDict: {}>
+<QueryDict: {'signid': ['archit'], 'password': ['qwerty1234'], 'number': ['9773912863'], 'email': ['shuklanushiv@gmail.com'], 'admission': ['17IT067'], 'name': ['Anushiv Shukla'], 'csrfmiddlewaretoken': ['uROdjKa7qm0myWosgAPIc83ZtUcrQSOgxT4I3iGj1bKGAA8YVfVIVzazJGYlooiF']}>
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46091)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46094)
+----------------------------------------
+<QueryDict: {}>
+<QueryDict: {'signid': ['archit'], 'password': ['qwerty1234'], 'number': ['9773912863'], 'email': ['shuklanushiv@gmail.com'], 'admission': ['17IT067'], 'name': ['Qwerty'], 'csrfmiddlewaretoken': ['6qa6RsRf8sfMqdcgZgWmM60xifLsqJsRMIKrTu83Yo7f4hjxNAyPlIxeQgqwAVmU']}>
+<QueryDict: {'signid': ['archit'], 'password': ['qwerty1234'], 'number': ['9773912863'], 'email': ['shuklanushiv@gmail.com'], 'admission': ['17IT067'], 'name': ['Qwerty'], 'csrfmiddlewaretoken': ['6qa6RsRf8sfMqdcgZgWmM60xifLsqJsRMIKrTu83Yo7f4hjxNAyPlIxeQgqwAVmU']}>
+<QueryDict: {}>
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46119)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46122)
+----------------------------------------
+<QueryDict: {}>
+<QueryDict: {'signid': ['archit'], 'password': ['qwerty1234'], 'number': ['9773912863'], 'email': ['shuklanushiv@gmail.com'], 'admission': ['17IT067'], 'name': ['Hmmm'], 'csrfmiddlewaretoken': ['mkD3QWemgnF4gt3QgVipuycQtddbW4Vv2CdoSYva6jxxUxa74fUS3aJx1eSf6gPy']}>
+<QueryDict: {}>
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46133)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('223.190.13.136', 46137)
+----------------------------------------
+[17/Feb/2019 04:21:56] "GET /leaderboard HTTP/1.1" 200 7485
+[17/Feb/2019 04:21:56] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[17/Feb/2019 04:21:56] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[17/Feb/2019 04:21:56] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[17/Feb/2019 04:21:56] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[17/Feb/2019 04:21:57] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[17/Feb/2019 04:21:57] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[17/Feb/2019 04:21:57] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[17/Feb/2019 04:21:57] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[17/Feb/2019 04:21:57] "GET /static/styles/leaderboard.css HTTP/1.1" 200 4209
+[17/Feb/2019 04:21:58] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[17/Feb/2019 04:21:58] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[17/Feb/2019 04:21:58] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[17/Feb/2019 04:21:58] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[17/Feb/2019 04:21:58] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[17/Feb/2019 04:21:58] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[17/Feb/2019 04:22:04] "GET / HTTP/1.1" 200 7671
+[17/Feb/2019 04:22:04] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[17/Feb/2019 04:22:04] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[17/Feb/2019 04:22:04] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:04] "GET /static/images/city.png HTTP/1.1" 200 28468
+[17/Feb/2019 04:22:05] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[17/Feb/2019 04:22:05] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[17/Feb/2019 04:22:05] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[17/Feb/2019 04:22:05] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[17/Feb/2019 04:22:05] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:05] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[17/Feb/2019 04:22:05] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[17/Feb/2019 04:22:05] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[17/Feb/2019 04:22:05] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:22:05] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[17/Feb/2019 04:22:05] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[17/Feb/2019 04:22:06] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[17/Feb/2019 04:22:06] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[17/Feb/2019 04:22:06] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[17/Feb/2019 04:22:06] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[17/Feb/2019 04:22:06] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[17/Feb/2019 04:22:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:07] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:55] "GET / HTTP/1.1" 200 7671
+[17/Feb/2019 04:22:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:55] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[17/Feb/2019 04:22:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:56] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:22:56] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[17/Feb/2019 04:22:57] "GET /static/website.mp3 HTTP/1.1" 200 231168
+[17/Feb/2019 04:22:57] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:22:57] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[17/Feb/2019 04:25:03] "GET / HTTP/1.1" 200 7671
+[17/Feb/2019 04:25:03] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:04] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:25:04] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:05] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:06] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:07] "POST / HTTP/1.1" 302 0
+[17/Feb/2019 04:25:08] "GET /question HTTP/1.1" 200 5388
+[17/Feb/2019 04:25:13] "GET /logout HTTP/1.1" 302 0
+[17/Feb/2019 04:25:14] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 04:25:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:15] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:25:15] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:16] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:25:27] "GET /register/ HTTP/1.1" 200 10947
+[17/Feb/2019 04:25:44] "POST /register/ HTTP/1.1" 200 10947
+[17/Feb/2019 04:26:11] "GET /question HTTP/1.1" 302 0
+[17/Feb/2019 04:26:12] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 04:26:12] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:13] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:13] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:26:13] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:14] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:18] "GET /rules HTTP/1.1" 200 9308
+[17/Feb/2019 04:26:22] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 04:26:22] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:23] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:23] "GET /static/website.mp3 HTTP/1.1" 200 57344
+[17/Feb/2019 04:26:23] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:26:24] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+Traceback (most recent call last):
+  File "/usr/lib/python3.5/socketserver.py", line 625, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python3.5/socketserver.py", line 354, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib/python3.5/socketserver.py", line 681, in __init__
+    self.handle()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 171, in handle
+    self.handle_one_request()
+  File "/usr/local/lib/python3.5/dist-packages/django/core/servers/basehttp.py", line 179, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python3.5/socket.py", line 575, in readinto
+    return self._sock.recv_into(b)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[17/Feb/2019 04:26:56] "POST / HTTP/1.1" 302 0
+[17/Feb/2019 04:26:58] "GET /question HTTP/1.1" 200 5388
+[17/Feb/2019 04:27:05] "GET /leaderboard HTTP/1.1" 200 7486
+[17/Feb/2019 04:27:10] "GET /leaderboard HTTP/1.1" 200 7486
+[17/Feb/2019 04:27:11] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[17/Feb/2019 04:31:54] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 04:31:55] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:31:57] "GET /leaderboard HTTP/1.1" 200 7431
+[17/Feb/2019 04:31:58] "GET /static/styles/leaderboard.css HTTP/1.1" 304 0
+[17/Feb/2019 04:34:27] "GET / HTTP/1.1" 200 7675
+[17/Feb/2019 04:34:33] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.css HTTP/1.1" 200 4219
+[17/Feb/2019 04:34:34] "GET /static/plugins/OwlCarousel2-2.2.1/owl.theme.default.css HTTP/1.1" 200 1333
+[17/Feb/2019 04:34:34] "GET /static/plugins/OwlCarousel2-2.2.1/animate.css HTTP/1.1" 200 73460
+[17/Feb/2019 04:34:34] "GET /static/plugins/font-awesome-4.7.0/css/font-awesome.min.css HTTP/1.1" 200 31000
+[17/Feb/2019 04:34:34] "GET /static/styles/main_styles.css HTTP/1.1" 200 22567
+[17/Feb/2019 04:34:34] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.css HTTP/1.1" 200 142041
+[17/Feb/2019 04:34:34] "GET /static/styles/responsive.css HTTP/1.1" 200 5761
+[17/Feb/2019 04:34:35] "GET /static/styles/login.css HTTP/1.1" 200 9742
+[17/Feb/2019 04:34:35] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:34:36] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 86659
+[17/Feb/2019 04:34:36] "GET /static/styles/bootstrap-4.1.2/popper.js HTTP/1.1" 200 81670
+[17/Feb/2019 04:34:36] "GET /static/styles/bootstrap-4.1.2/bootstrap.min.js HTTP/1.1" 200 51039
+[17/Feb/2019 04:34:37] "GET /static/plugins/greensock/TweenMax.min.js HTTP/1.1" 200 112880
+[17/Feb/2019 04:34:37] "GET /static/plugins/scrollmagic/ScrollMagic.min.js HTTP/1.1" 200 17293
+[17/Feb/2019 04:34:37] "GET /static/plugins/greensock/TimelineMax.min.js HTTP/1.1" 200 20489
+[17/Feb/2019 04:34:39] "GET /static/plugins/greensock/animation.gsap.min.js HTTP/1.1" 200 1288
+[17/Feb/2019 04:34:40] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:34:40] "GET /static/plugins/greensock/ScrollToPlugin.min.js HTTP/1.1" 200 3395
+[17/Feb/2019 04:34:40] "GET /static/plugins/OwlCarousel2-2.2.1/owl.carousel.js HTTP/1.1" 200 85368
+[17/Feb/2019 04:34:40] "GET /static/plugins/easing/easing.js HTTP/1.1" 200 8305
+[17/Feb/2019 04:34:41] "GET /static/plugins/progressbar/progressbar.min.js HTTP/1.1" 200 21693
+[17/Feb/2019 04:34:41] "GET /static/plugins/parallax-js-master/parallax.min.js HTTP/1.1" 200 6868
+[17/Feb/2019 04:34:42] "GET /static/js/custom.js HTTP/1.1" 200 3269
+[17/Feb/2019 04:34:42] "GET /static/images/cloud.png HTTP/1.1" 200 2697
+[17/Feb/2019 04:34:43] "GET /static/images/cloud_full.png HTTP/1.1" 200 3746
+[17/Feb/2019 04:34:43] "GET /static/images/city.png HTTP/1.1" 200 28468
+[17/Feb/2019 04:34:43] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:34:44] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:34:44] "GET /static/silent.mp3 HTTP/1.1" 200 41239
+[17/Feb/2019 04:34:45] "GET /static/images/icon.jpg HTTP/1.1" 200 79581
+[17/Feb/2019 04:34:49] "GET /register HTTP/1.1" 301 0
+[17/Feb/2019 04:34:50] "GET /register/ HTTP/1.1" 200 10947
