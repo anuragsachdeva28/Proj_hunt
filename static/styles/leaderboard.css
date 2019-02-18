@@ -54,7 +54,7 @@ Leaderboard
 .leaderboard{
     width:90vw;
     top: 25vh;
-    height: 85vh;
+    height: 77vh;
 }
 .leaderboard ol {
   counter-reset: leaderboard;

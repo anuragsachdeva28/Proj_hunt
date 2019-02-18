@@ -192,7 +192,7 @@ def question(request):
                         usr.save()
                     else:
                         context['again']=True
-                elif ans==ans1:
+                elif (ans.lower())==(ans1.lower()):
                     usr.level=usr.level+1
                     if usr.attempts<=3:
                         usr.points=usr.points+10-((usr.attempts)*2)
