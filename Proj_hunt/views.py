@@ -260,6 +260,13 @@ def logout_page(request):
     return redirect('/')
 
 
+def upgrade(request):
+    objs=Profile.objects.all()
+    for i in objs:
+        if i.level<4:
+            i.level=4
+        i.save()
+    return render(request,"Backend/completed.html",{})
 
 # def login_page(request):
 #     form=LoginForm(request.POST or None)
@@ -286,4 +293,6 @@ def logout_page(request):
 
 
 
+def wind(request):
+    return render(request,"Backend/completed.html",{})
 

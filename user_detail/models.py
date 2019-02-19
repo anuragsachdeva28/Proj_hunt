@@ -16,7 +16,7 @@ class Profile(models.Model):
     # branch2=models.CharField(null=True,max_length=100)
     # branch3=models.CharField(null=True,max_length=100)
     number=models.IntegerField()
-    level=models.IntegerField(default=1)
+    level=models.IntegerField(default=4)
     signid=models.CharField(max_length=12,null=True)
     attempts=models.IntegerField(default=0)
     password=models.CharField(max_length=1000,null=True,blank=True)

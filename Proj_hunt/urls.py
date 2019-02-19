@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import index,register_page,rules,question,logout_page
+from .views import index,register_page,rules,question,logout_page,upgrade,wind
 from verify.views import gen2
 from .views import leaderboard
 from django.conf import settings
@@ -25,14 +25,15 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index),
-    path('register/', register_page),
-    path('rules',rules),
-    path('question',question),
+    path('',wind),
+    path('register/',wind),
+    path('rules',wind),
+    path('question',wind),
     path('leaderboard',leaderboard),
-    path('YRxJ65c32AhLRZ8rh7ID',gen2),
-    path('logout',logout_page)
-
+    path('YRxJ65c32AhLRZ8rh7ID',wind),
+    path('logout',logout_page),
+    #path('upgrade',upgrade),
+    path('wind',wind),
     #path('gen',gen),
 ]
 
