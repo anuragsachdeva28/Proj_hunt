@@ -26,6 +26,11 @@
                 height: 125vh;
             }
         }
+        @media screen and (max-width : 480px){
+            .home{
+                height: 140vh;
+            }
+        }
     </style>
     <style type="text/css">
         .icon {
@@ -49,10 +54,74 @@
         }
         }
     </style>
+    <style type="text/css">
+        @media screen and (max-height: 800px) and (max-width: 840px) {
+            .home{
+                height: 160vh;
+            }
+        }
+
+        @media screen and (max-height: 480px) and (max-width: 840px) {
+            .home{
+                height: 190vh;
+            }
+        }
+        
+        @media screen and (max-height: 400px) and (max-width: 840px) {
+            .home{
+                height: 210vh;
+            }
+        }
+
+        @media screen and (max-height: 350px) and (max-width: 840px) {
+            .home{
+                height: 240vh;
+            }
+        }
+        
+        @media screen and (max-height: 590px) and (min-width: 840px) {
+            .home{
+                height: 140vh;
+            }
+        }
+
+        @media screen and (max-height: 510px) and (min-width: 840px) {
+            .home{
+                height: 160vh;
+            }
+        }
+
+        @media screen and (max-height: 440px) and (min-width: 840px) {
+            .home{
+                height: 180vh;
+            }
+        }
+
+        @media screen and (max-height: 390px) and (min-width: 840px) {
+            .home{
+                height: 200vh;
+            }
+        }
+
+        @media screen and (max-height: 340px) and (min-width: 840px) {
+            .home{
+                height: 220vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
-
+{% if exist %}
+<script type="text/javascript">
+    alert("Try another username 🤗🤗")
+</script>
+{% endif %}
+{% if bool %}
+<script type="text/javascript">
+    alert("Wrong Registration Id 😎😎")
+</script>
+{% endif %}
 
     <div class="super_container">
 
@@ -69,7 +138,11 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-item"><a href="/question">DashBoard</a></li>
-                        <li class="nav-item"><a href="/">Log In</a></li>
+                        {% if request.user.is_authenticated %}
+                        <li class="nav-item"><a href="/logout">Logout</a></li>
+                        {% else %}
+                        <li class="nav-item"><a href="/">Login</a></li>
+                        {% endif %}
                         <!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
                         <li class="nav-item"><a href="/rules">Rules</a></li>
                     </ul>
@@ -183,7 +256,7 @@
         }
 }
 </style>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
           var myAudio = document.getElementById("my_audio");
           console.log(myAudio);
           var isPlaying = true;
@@ -204,7 +277,7 @@
           myAudio.onpause = function() {
             isPlaying = false;
           };
-    </script> -->
+    </script>
     <script src="../../static/js/jquery-3.2.1.min.js"></script>
     <script src="../../static/styles/bootstrap-4.1.2/popper.js"></script>
     <script src="../../static/styles/bootstrap-4.1.2/bootstrap.min.js"></script>

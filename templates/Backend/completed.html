@@ -62,10 +62,14 @@
 					<span></span>
 				</div>
 				<ul class="nav-list">
-					<li class="nav-item"><a href="/leaderboard" target="_blank">Leaderboard</a></li>
-					<li class="nav-item"><a href="/" target="_blank">Log In</a></li>
+					<li class="nav-item"><a href="/leaderboard">Leaderboard</a></li>
+					{% if request.user.is_authenticated %}
+					<li class="nav-item"><a href="/logout">Logout</a></li>
+					{% else %}
+					<li class="nav-item"><a href="/">Login</a></li>
+					{% endif %}
 					<!-- <li class="nav-item"><a href="Sign Up.html" target="_blank">Sign Up</a></li> -->
-					<li class="nav-item"><a href="/rules" target="_blank">Rules</a></li>
+					<li class="nav-item"><a href="/rules">Rules</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -88,8 +92,8 @@
 				<div class="row">
 					<div class="col">
 						<div class="home_content text-center">
-							<div class="home_title">Hello World!</div>
-                            <div class="home_text" style="font-size: 18px;">You have completed the Test. Please Head over to the <a href="/leaderboard">LeaderBoards</a></div>
+							<div class="home_title">Thank You!</div>
+		    <div class="home_text" style="font-size: 18px;">Come back Next Year.<br> Please Head over to the <a href="/leaderboard">LeaderBoards</a><br>For more Updates - <a href="https://www.facebook.com/jssmmil/">Facebook</a></div>
 						</div>
 					</div>
 				</div>
