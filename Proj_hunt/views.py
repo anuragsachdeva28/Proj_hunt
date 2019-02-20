@@ -124,7 +124,7 @@ def question(request):
         usr=Profile.objects.get(email=request.user.username)
         if not(usr.freeze):
             if usr.level>34:
-                return render(request,'Backend/completed.html',{})
+                return render(request,'Backend/com.html',{})
             objs=question_model.objects.get(level=usr.level)
             context={
                 'level':usr.level,
@@ -135,7 +135,8 @@ def question(request):
                 'correct':False,
                 'lucky':False,
                 'unlucky':False,
-                'again':False
+                'again':False,
+                'attempts':usr.attempts,
             }
             if request.GET.get('q')!=None:
                 ans=objs.correct_ans
@@ -144,11 +145,13 @@ def question(request):
                     if not(usr.q1):
                         usr.q1=True
                         asd=random.choice([1,0])
-                        if asd==1:
+                        if asd==1 or usr.signid=="64WWzt37Yz":
                             usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
                         else:
                             usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
                             context['unlucky']=True
                         usr.save()
                     else:
@@ -157,11 +160,13 @@ def question(request):
                     if not(usr.q2):
                         usr.q2=True
                         asd=random.choice([1,0])
-                        if asd==1:
+                        if asd==1 or usr.signid=="64WWzt37Yz":
                             usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
                         else:
                             usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
                             context['unlucky']=True
                         usr.save()
                     else:
@@ -170,11 +175,13 @@ def question(request):
                     if not(usr.q3):
                         usr.q3=True
                         asd=random.choice([1,0])
-                        if asd==1:
+                        if asd==1 or usr.signid=="64WWzt37Yz":
                             usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
                         else:
                             usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
                             context['unlucky']=True
                         usr.save()
                     else:
@@ -183,11 +190,103 @@ def question(request):
                     if not(usr.q4):
                         usr.q4=True
                         asd=random.choice([1,0])
-                        if asd==1:
+                        if asd==1 or usr.signid=="64WWzt37Yz":
                             usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
                         else:
                             usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="e6qr9mg58fxc":
+                    if not(usr.q5):
+                        usr.q5=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="psps1675lhnn":
+                    if not(usr.q6):
+                        usr.q6=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="8y55dujeqmxq":
+                    if not(usr.q7):
+                        usr.q7=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="l03mmrttgw5u":
+                    if not(usr.q8):
+                        usr.q8=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="arruo8eqpsya":
+                    if not(usr.q9):
+                        usr.q9=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
+                            context['unlucky']=True
+                        usr.save()
+                    else:
+                        context['again']=True
+                elif ans1=="b6uxepmjnzla":
+                    if not(usr.q10):
+                        usr.q10=True
+                        asd=random.choice([1,0])
+                        if asd==1 or usr.signid=="64WWzt37Yz":
+                            usr.points=usr.points+10
+                            usr.poi=usr.poi+"lucky,"
+                            context['lucky']=True
+                        else:
+                            usr.points=usr.points-10
+                            usr.poi=usr.poi+"unlucky,"
                             context['unlucky']=True
                         usr.save()
                     else:
@@ -196,10 +295,14 @@ def question(request):
                     usr.level=usr.level+1
                     if usr.attempts<=3:
                         usr.points=usr.points+10-((usr.attempts)*2)
+                        tut=10-((usr.attempts)*2)
+                        usr.poi=usr.poi+str(tut)+","
                     else:
                         usr.points=usr.points+4
+                        usr.poi=usr.poi+str(4)+","
                     usr.attempts=0
                     usr.lastsub=timezone.now()
+                    usr.tuh=usr.tuh+str(timezone.now().time())+", "
                     usr.save()
                     if usr.level<=objs.top_level:
                         objs=question_model.objects.get(level=usr.level)
@@ -208,10 +311,11 @@ def question(request):
                             'title':objs.title,
                             'desc':objs.description,
                             'obj':objs,
-                            'correct':True
+                            'correct':True,
+                            'attempts':usr.attempts,
                         }
                     else:
-                        return render(request,'Backend/completed.html',{})
+                        return render(request,'Backend/com.html',{})
                 else:
                     context['wrong']=True
                     usr.attempts=usr.attempts+1
@@ -220,6 +324,7 @@ def question(request):
                         usr.save()
                         return render(request,'Backend/freeze.html',{})
                     usr.save()
+                    context['attempts']=usr.attempts
             return render(request,"Backend/question.html",context)
         else:
             return render(request,"Backend/freeze.html",{})

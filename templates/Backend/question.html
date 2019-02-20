@@ -109,6 +109,8 @@
 						<div class="home_content text-center">
 							<div class="home_title">{{title}}</div>
                             <div class="home_text" style="font-size: 18px;">{{desc|linebreaks}}
+                            	<br>
+                            	<b>No of Attempts on this Level - {{attempts}}</b>
                             	{% if obj.file_check %}
                             		<br><a href="{{obj.file.url}}" download>Download</a>
                             	{% endif %}

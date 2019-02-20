@@ -31,10 +31,12 @@ urlpatterns = [
     path('question',wind),
     path('leaderboard',leaderboard),
     path('YRxJ65c32AhLRZ8rh7ID',wind),
-    path('logout',logout_page),
+    path('logout',wind),
     #path('upgrade',upgrade),
     path('wind',wind),
     #path('gen',gen),
+    #path('abra',question),
+    #path('abr',index)
 ]
 
 

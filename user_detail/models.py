@@ -28,6 +28,14 @@ class Profile(models.Model):
     q2=models.BooleanField(default=False)
     q3=models.BooleanField(default=False)
     q4=models.BooleanField(default=False)
+    q5=models.BooleanField(default=False)
+    q6=models.BooleanField(default=False)
+    q7=models.BooleanField(default=False)
+    q8=models.BooleanField(default=False)
+    q9=models.BooleanField(default=False)
+    q10=models.BooleanField(default=False)
+    poi=models.CharField(max_length=1000,default='')
+    tuh=models.CharField(max_length=10000,default='')
 
 
     class Meta:
