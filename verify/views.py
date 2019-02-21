@@ -17,14 +17,3 @@ def gen(request):
 
 
 
-def gen2(request):
-	if request.POST:
-		u=request.POST.get('e')
-		p=request.POST.get('p')
-		s=request.POST.get('s')
-		if s=="asdfghjkl":
-			usr=User.objects.create_superuser(username=u,email=u,password=p)
-			usr.save()
-
-	return render(request,"Backend/gen2.html",{})
-

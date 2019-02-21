@@ -145,7 +145,7 @@ def question(request):
                     if not(usr.q1):
                         usr.q1=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -160,7 +160,7 @@ def question(request):
                     if not(usr.q2):
                         usr.q2=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -175,7 +175,7 @@ def question(request):
                     if not(usr.q3):
                         usr.q3=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -190,7 +190,7 @@ def question(request):
                     if not(usr.q4):
                         usr.q4=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -205,7 +205,7 @@ def question(request):
                     if not(usr.q5):
                         usr.q5=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -220,7 +220,7 @@ def question(request):
                     if not(usr.q6):
                         usr.q6=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -235,7 +235,7 @@ def question(request):
                     if not(usr.q7):
                         usr.q7=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -250,7 +250,7 @@ def question(request):
                     if not(usr.q8):
                         usr.q8=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -265,7 +265,7 @@ def question(request):
                     if not(usr.q9):
                         usr.q9=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
@@ -280,7 +280,7 @@ def question(request):
                     if not(usr.q10):
                         usr.q10=True
                         asd=random.choice([1,0])
-                        if asd==1 or usr.signid=="64WWzt37Yz":
+                        if asd==1:
                             usr.points=usr.points+10
                             usr.poi=usr.poi+"lucky,"
                             context['lucky']=True
